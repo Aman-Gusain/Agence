@@ -1,7 +1,3 @@
-.demo-video-wrapper {
-   background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
-}
-
 /* Video overlay and content */
 .video-overlay {
    position: absolute;
@@ -11,8 +7,7 @@
    right: 0;
    pointer-events: none;
    /* Allows right click menu on the video */
-   background: url("https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png")
-      left top repeat;
+
    opacity: 0.3;
 }
 

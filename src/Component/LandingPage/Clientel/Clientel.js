@@ -139,7 +139,7 @@ const Clientel = () => {
                                           Kyoto is famous for its numerous
                                           classNameical Buddhist temples,
                                           gardens, imperial palaces, Shinto
-                                          shrines and traditional wooden houses.
+                                          shrines and traditional.
                                        </p>
                                     </div>
                                  </div>
