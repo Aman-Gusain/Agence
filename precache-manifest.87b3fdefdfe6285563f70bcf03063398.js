@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6fdfb070fc9ea7e9d837327b9a342da",
+    "revision": "43c6f20713fb90dd12a05a6cd0436259",
     "url": "/Agence/index.html"
   },
   {
-    "revision": "3834bf43105ffb88f1e8",
+    "revision": "e7445fb94117040d39b9",
     "url": "/Agence/static/css/2.9fd47868.chunk.css"
   },
   {
-    "revision": "79746074fb6bbb877fc5",
-    "url": "/Agence/static/css/main.abbb9f26.chunk.css"
+    "revision": "4efc5f789429160ed356",
+    "url": "/Agence/static/css/main.a24e37e3.chunk.css"
   },
   {
-    "revision": "3834bf43105ffb88f1e8",
-    "url": "/Agence/static/js/2.49b37c81.chunk.js"
+    "revision": "e7445fb94117040d39b9",
+    "url": "/Agence/static/js/2.7c565604.chunk.js"
   },
   {
     "revision": "4386012a6d334684338618496b7aac20",
-    "url": "/Agence/static/js/2.49b37c81.chunk.js.LICENSE.txt"
+    "url": "/Agence/static/js/2.7c565604.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "79746074fb6bbb877fc5",
-    "url": "/Agence/static/js/main.389f455b.chunk.js"
+    "revision": "4efc5f789429160ed356",
+    "url": "/Agence/static/js/main.c0b0506c.chunk.js"
   },
   {
     "revision": "929571137253e99a22f9",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ba833ac476d62cd9e008d924ec9ff5f0",
     "url": "/Agence/static/media/brand.ba833ac4.jpg"
+  },
+  {
+    "revision": "ebe9eb1bce533cdf44fe7bd1a44a8746",
+    "url": "/Agence/static/media/circle-cropped (1).ebe9eb1b.png"
   },
   {
     "revision": "596e15871dee23310c229715623a83dd",
@@ -66,5 +70,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/Agence/static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "85886027b27d4de3a2714433e37eb5df",
+    "url": "/Agence/static/media/source.85886027.webm"
+  },
+  {
+    "revision": "c248f4c7fca222308556f371db0794b0",
+    "url": "/Agence/static/media/source.c248f4c7.ogv"
+  },
+  {
+    "revision": "dfd0eb2a920d3ea5667f997306d66702",
+    "url": "/Agence/static/media/source.dfd0eb2a.mp4"
   }
 ]);
