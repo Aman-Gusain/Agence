@@ -20,7 +20,7 @@
    position: relative;
    text-align: center;
    color: #fff;
-   margin: 150px 0;
+   margin: 10% 0;
    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -45,9 +45,10 @@
 }
 
 .page-width {
-   width: 92%;
+   width: 100%;
    max-width: 960px;
-   margin: 0 auto;
+   padding: 0%;
+   margin-left: 5%;
 }
 
 #header {
@@ -82,7 +83,9 @@ a:hover .subtitle {
 }
 
 #content {
-   padding: 40px 0;
+   padding: 0px 0;
+   width: 80%;
+   margin: auto;
 }
 
 /* CSS from jQuery Background Video plugin */
@@ -97,6 +100,14 @@ a:hover .subtitle {
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+.intr {
+   font-family: "Oswald", sans-serif;
+   color: #fff;
+   width: 100%;
+   border: none;
+   text-align: left;
+   font-size: 60px;
 }
 
 .jquery-background-video {

@@ -13,7 +13,7 @@ AOS.init();
 const Features = () => {
    return (
       <section id="features">
-         <h1>OUR SERVICES</h1>
+         <h1 className="headi">OUR SERVICES</h1>
          <div className="features-inner">
             <div
                data-aos="fade-up-right"
@@ -24,9 +24,9 @@ const Features = () => {
                   <img src={research} alt="none" />
                </div>
                <div className="features-text">
-                  <h1 class="animate__animated animate__bounce">
+                  <h2 className="animate__animated animate__bounce">
                      Digital X-Rays
-                  </h1>
+                  </h2>
                   <p>
                      Dr Albazzaz, Dr Javed and Dr Safi bring the most up to date
                      dental technology to their West Chicago practice. They use
@@ -46,7 +46,7 @@ const Features = () => {
                   <img className="picss" src={production} />
                </div>
                <div className="features-text inverted">
-                  <h1>Dental Cleanings</h1>
+                  <h2>Dental Cleanings</h2>
                   <p>
                      Our dentists treat patients with healthy gums and patients
                      who inflammation and other periodontal diseases. Our staff
@@ -65,7 +65,7 @@ const Features = () => {
                   <img className="picss" src={identity} />
                </div>
                <div className="features-text">
-                  <h1>Fluoride Treatments</h1>
+                  <h2>Fluoride Treatments</h2>
                   <p>
                      The staff at North Ave Dental Associates believe that
                      everyone should have routine professional fluoride
@@ -83,7 +83,7 @@ const Features = () => {
                   <img className="picss" src={development} />
                </div>
                <div className="features-text inverted">
-                  <h1>Oral Hygiene Instruction</h1>
+                  <h2>Oral Hygiene Instruction</h2>
                   <p>
                      Home care is an important part of maintaining healthy teeth
                      and gums. Our staff are happy to review proper brushing &
@@ -101,7 +101,7 @@ const Features = () => {
                   <img className="picss" src={brand} />
                </div>
                <div className="features-text">
-                  <h1>Digital X-Rays</h1>
+                  <h2>Digital X-Rays</h2>
                   <p>
                      Dr Albazzaz, Dr Javed and Dr Safi bring the most up to date
                      dental technology to their West Chicago practice. They use
@@ -121,7 +121,7 @@ const Features = () => {
                   <img className="picss" src={design} />
                </div>
                <div className="features-text inverted">
-                  <h1>Digital X-Rays</h1>
+                  <h2>Digital X-Rays</h2>
                   <p>
                      Dr Albazzaz, Dr Javed and Dr Safi bring the most up to date
                      dental technology to their West Chicago practice. They use

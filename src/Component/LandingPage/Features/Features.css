@@ -7,9 +7,12 @@
    height: 100%;
    width: 98%;
    margin: auto;
-   margin-top: 100px;
 
    padding: 2rem;
+}
+.headi {
+   width: 100%;
+   margin-bottom: 100px;
 }
 @media (min-width: 600px) {
    #features {
@@ -57,11 +60,11 @@
 .features-text {
    padding: 2rem;
 }
-.features-text h1,
+.features-text h2,
 .features-text p {
    color: black;
 }
-.features-text h1 {
+.features-text h2 {
    text-decoration: underline red;
 }
 .features-text p {

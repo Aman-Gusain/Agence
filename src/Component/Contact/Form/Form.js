@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import Styles from "./Form.css";
 import $ from "jquery";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 const Form = () => {
    useEffect(() => {
       (function () {
@@ -64,8 +67,8 @@ const Form = () => {
       }.call(this));
    });
    return (
-      <div id="wrapper">
-         <h1>Get in Touch</h1>
+      <div id="wrapper" data-aos="fade-left" data-aos-duration="1000">
+         <h1 className="head">Get in Touch</h1>
          <p>
             Do you have any questions? Please do not hesitate to contact us
             directly. Our team will come back to you within a matter of hours to

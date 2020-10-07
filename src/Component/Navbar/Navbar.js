@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import log from "../LandingPage/Clients/circle-cropped (1).png";
 import Contact from "../Contact/Contact";
 import Styles from "./Navbar.css";
 import LandingPage from "../LandingPage/Landingpage";
@@ -98,7 +99,8 @@ const Navbar = () => {
             <div className="container">
                <nav id="navigation">
                   <a href="/" className="logo">
-                     Agnece
+                     <img className="log" src={log} alt="" />
+                     Agence
                   </a>
                   <a aria-label="mobile menu" className="nav-toggle">
                      <span></span>
@@ -120,9 +122,9 @@ const Navbar = () => {
             </div>
          </header>
          <Scrolltotop>
+            <Route path="/Agence" exact component={LandingPage} />
             <Route path="/" exact component={LandingPage} />
             <Route path="/home" exact component={LandingPage} />
-
             <Route path="/contact" exact component={Contact} />
          </Scrolltotop>
       </div>

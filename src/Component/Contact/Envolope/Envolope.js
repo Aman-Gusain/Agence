@@ -1,9 +1,16 @@
 import React from "react";
 import Styles from "./Envolope.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Envolope = () => {
    return (
-      <div className="container1 d-flex justify-content-center align-items-center">
+      <div
+         className="container1 d-flex justify-content-center align-items-center"
+         data-aos="fade-right"
+         data-aos-duration="1000"
+      >
          <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 790 563"

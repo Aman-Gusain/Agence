@@ -22,7 +22,6 @@ const Clientel = () => {
          }
 
          items[count].classList.add("activ");
-         console.log(count);
       }
 
       function showPreviousItem() {
@@ -59,7 +58,7 @@ const Clientel = () => {
    });
    return (
       <div className="clientel">
-         <h1>FEATURED WORK</h1>
+         <h1 className="head">FEATURED WORK</h1>
          <div
             className="intro-section"
             data-aos="zoom-in"
@@ -76,7 +75,7 @@ const Clientel = () => {
                                     <a href="/work">
                                        <h1 className="title">
                                           <span className="underline">
-                                             Explore Tokyo
+                                             Goswole
                                           </span>
                                        </h1>
                                     </a>
@@ -115,7 +114,7 @@ const Clientel = () => {
                                     <a href="/work">
                                        <h1 className="title">
                                           <span className="underline">
-                                             Explore Kyoto
+                                             Scentra
                                           </span>
                                        </h1>
                                     </a>
@@ -131,7 +130,7 @@ const Clientel = () => {
                                           <a href="/work">
                                              <h1 className="title">
                                                 <span className="underline">
-                                                   Explore Kyoto
+                                                   Scentra
                                                 </span>
                                              </h1>
                                           </a>
@@ -154,7 +153,7 @@ const Clientel = () => {
                                     <a href="/work">
                                        <h1 className="title">
                                           <span className="underline">
-                                             Explore Osaka
+                                             Yellow Door
                                           </span>
                                        </h1>
                                     </a>
@@ -170,7 +169,46 @@ const Clientel = () => {
                                           <a href="/work">
                                              <h1 className="title">
                                                 <span className="underline">
-                                                   Explore Osaka
+                                                   Yellow Door
+                                                </span>
+                                             </h1>
+                                          </a>
+                                       </div>
+                                       <p className="description">
+                                          Osaka is a large port city and
+                                          commercial center known for its modern
+                                          architecture, nightlife and hearty
+                                          street food.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li className="slider-item">
+                           <div className="grid vertical">
+                              <div className="column-xs-12 column-md-2 hide-mobile">
+                                 <div className="intro">
+                                    <a href="/work">
+                                       <h1 className="title">
+                                          <span className="underline">
+                                             Perch
+                                          </span>
+                                       </h1>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div className="column-xs-12 column-md-10">
+                                 <div className="image-holder">
+                                    <img src="https://source.unsplash.com/peYW3VwICpE" />
+                                 </div>
+                                 <div className="grid">
+                                    <div className="column-xs-12 column-md-9">
+                                       <div className="intro show-mobile">
+                                          <a href="/work">
+                                             <h1 className="title">
+                                                <span className="underline">
+                                                   Perch
                                                 </span>
                                              </h1>
                                           </a>
@@ -193,16 +231,6 @@ const Clientel = () => {
                   </div>
                </div>
             </div>
-            {/* <div className="controls">
-            <button className="previous">
-               <span className="visually-hidden">Previous</span>
-               <span className="icon arrow-left" aria-hidden="true"></span>
-            </button>
-            <button className="next">
-               <span className="visually-hidden">Next</span>
-               <span className="icon arrow-right" aria-hidden="true"></span>
-            </button>
-         </div> */}
          </div>
       </div>
    );

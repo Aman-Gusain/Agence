@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import Styles from "./Clients.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import logo from "./circle-cropped (1).png";
 
 import $ from "jquery";
 import AOS from "aos";
@@ -22,27 +23,29 @@ export default class Clients extends Component {
       };
       return (
          <div className="clients">
-            <h2>Pause On Hover</h2>
-            <Slider {...settings}>
-               <div>
-                  <h3>1</h3>
-               </div>
-               <div>
-                  <h3>2</h3>
-               </div>
-               <div>
-                  <h3>3</h3>
-               </div>
-               <div>
-                  <h3>4</h3>
-               </div>
-               <div>
-                  <h3>5</h3>
-               </div>
-               <div>
-                  <h3>6</h3>
-               </div>
-            </Slider>
+            <h1>OUR CLIENTS</h1>
+            <div>
+               <Slider {...settings}>
+                  <div>
+                     <img className="lgo" src={logo} alt="" />
+                  </div>
+                  <div>
+                     <img className="lgo" src={logo} alt="" />
+                  </div>
+                  <div>
+                     <img className="lgo" src={logo} alt="" />
+                  </div>
+                  <div>
+                     <img className="lgo" src={logo} alt="" />
+                  </div>
+                  <div>
+                     <img className="lgo" src={logo} alt="" />
+                  </div>
+                  <div>
+                     <img className="lgo" src={logo} alt="" />
+                  </div>
+               </Slider>
+            </div>
          </div>
       );
    }

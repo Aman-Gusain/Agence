@@ -1,71 +1,42 @@
 import React from "react";
 import Styles from "./About.css";
-// import mp4 from "./videos/source.mp4"
-// import webm from "./videos/source.webm"
-// import ogb form "./videos/source.ogv";
+import vmp4 from "./Video/source.mp4";
+import vwebm from "./Video/source.webm";
+import vogv from "./Video/source.ogv";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 const About = () => {
    return (
-      <div>
-         <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
-            <video
-               class="jquery-background-video"
-               autoPlay
-               muted
-               loop
-
-               // poster="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.jpg"
-            >
-               <source
-                  src=".https://i.giphy.com/media/3o6Zt0hHil6MqeJgHu/source.mp4"
-                  type="video/mp4"
-               ></source>
-               <source
-                  src="https://i.giphy.com/media/3o6Zt0hHil6MqeJgHu/source.mp4"
-                  type="video/webm"
-               ></source>
-               <source
-                  src="https://i.giphy.com/media/3o6Zt0hHil6MqeJgHu/source.mp4"
-                  type="video/ogg"
-               ></source>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+         <div className="video-hero jquery-background-video-wrapper demo-video-wrapper">
+            <video className="jquery-background-video" autoPlay muted loop>
+               <source src={vmp4} type="video/mp4"></source>
+               <source src={vwebm} type="video/webm"></source>
+               <source src={vogv} type="video/ogvy"></source>
             </video>
-            <div class="video-overlay"></div>
-            <div class="page-width">
-               <div class="video-hero--content">
-                  <h2>
+            <div className="video-overlay"></div>
+            <div className="page-width">
+               <div className="video-hero--content">
+                  <h1 className="intr">
                      Knockout your competition with the power of design and code
-                  </h2>
+                  </h1>
                </div>
             </div>
          </div>
 
          <div id="content">
-            <div class="page-width">
-               <h3>Easy Background Videos</h3>
-               <p>
-                  This page uses the{" "}
-                  <a
-                     href="https://github.com/BGStock/jquery-background-video"
-                     target="_blank"
-                  >
-                     jQuery Background Video
-                  </a>{" "}
-                  plugin along with some simple html and css to generate this
-                  background video.
-               </p>
-               <p>
-                  The video overlay pattern is available at{" "}
-                  <a
-                     href="http://html5backgroundvideos.com/pattern-overlays/"
-                     target="_blank"
-                  >
-                     http://html5backgroundvideos.com/pattern-overlays/
-                  </a>
-               </p>
-            </div>
+            <h3>Easy Background Videos</h3>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+               ut dolor vel nunc tempor porttitor nec accumsan ex. Donec
+               dignissim ipsum id dolor imperdiet ultrices eu vitae ante.
+               Integer metus neque, pellentesque et porta et, scelerisque at
+               ligula. Vestibulum ante ipsum primis in faucibus orci luctus et
+               ultrices posuere cubilia curae
+            </p>
          </div>
       </div>
    );

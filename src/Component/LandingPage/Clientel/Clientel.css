@@ -9,8 +9,10 @@
 .clientel {
    margin-top: 100px;
 }
-.clientel h1 {
+.clientel .head {
    text-align: center;
+   width: 80%;
+   margin: auto;
    margin-bottom: 50px;
 }
 
