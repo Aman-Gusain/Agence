@@ -1,44 +1,18 @@
 import React, { useEffect } from "react";
-import log from "../LandingPage/Clients/circle-cropped (1).png";
-import Contact from "../Contact/Contact";
+import log from "./agence-logo-black.png";
 import Styles from "./Navbar.css";
-import LandingPage from "../LandingPage/Landingpage";
 import $ from "jquery";
+import Work from "../Work/Work";
+import Yellowdoor from "../Work/Yellowdoor/Yellowdoor";
 import Scrolltotop from "../Scrolltotop";
+import Landingpage from "../Landingpage/Landingpage";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
 import { Route } from "react-router";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
    useEffect(() => {
-      // NAVIGATION LOGO SCROLL TOP
-      $(".logo").on("click", function (e) {
-         e.preventDefault();
-         $(".nav-toggle").removeClass("open");
-         $(".menu-left").removeClass("collapse");
-         $("html, body").animate(
-            {
-               scrollTop: 0,
-            },
-            750,
-            "easeInOutQuad"
-         );
-      });
-      // LINKS TO ANCHORS
-      $('a[href^="#"]').on("click", function (event) {
-         var $target = $(this.getAttribute("href"));
-
-         if ($target.length) {
-            event.preventDefault();
-            $("html, body").stop().animate(
-               {
-                  scrollTop: $target.offset().top,
-               },
-               750,
-               "easeInOutQuad"
-            );
-         }
-      });
-
       // TOGGLE HAMBURGER & COLLAPSE NAV
       $(".nav-toggle").on("click", function () {
          $(this).toggleClass("open");
@@ -49,7 +23,10 @@ const Navbar = () => {
          $(".nav-toggle").removeClass("open");
          $(".menu-left").removeClass("collapse");
       });
-
+      $(".logo").on("click", function () {
+         $(".nav-toggle").removeClass("open");
+         $(".menu-left").removeClass("collapse");
+      });
       // SHOW/HIDE NAV
 
       // Hide Header on on scroll down
@@ -75,7 +52,7 @@ const Navbar = () => {
          // Make sure they scroll more than delta
          if (Math.abs(lastScrollTop - st) <= delta) return;
 
-         // If they scrolled down and are past the navbar, add class .nav-up.
+         // If they scrolled down and are past the navbar, add className .nav-up.
          // This is necessary so you never see what is "behind" the navbar.
          if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
@@ -98,10 +75,10 @@ const Navbar = () => {
          <header>
             <div className="container">
                <nav id="navigation">
-                  <a href="/" className="logo">
+                  <Link to="/Agence" className="logo">
                      <img className="log" src={log} alt="" />
-                     Agence
-                  </a>
+                  </Link>
+                  <h2 className="Name">Agence</h2>
                   <a aria-label="mobile menu" className="nav-toggle">
                      <span></span>
                      <span></span>
@@ -109,10 +86,10 @@ const Navbar = () => {
                   </a>
                   <ul className="menu-left">
                      <li>
-                        <NavLink to="/home">About</NavLink>
+                        <NavLink to="/about">About</NavLink>
                      </li>
                      <li>
-                        <NavLink to="/H">Work</NavLink>
+                        <NavLink to="/work">Work</NavLink>
                      </li>
                      <li>
                         <NavLink to="/contact">Contact</NavLink>
@@ -122,10 +99,15 @@ const Navbar = () => {
             </div>
          </header>
          <Scrolltotop>
-            <Route path="/Agence" exact component={LandingPage} />
+            {/* <Route path="/Agence" exact component={LandingPage} />
             <Route path="/" exact component={LandingPage} />
-            <Route path="/home" exact component={LandingPage} />
+            <Route path="/home" exact component={LandingPage} /> */}
+            <Route path="/" exact component={Landingpage} />
+            <Route path="/Agence" exact component={Landingpage} />
+            <Route path="/work" exact component={Work} />
+            <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={Contact} />
+            <Route path="/work/yellowdoor" exact component={Yellowdoor} />
          </Scrolltotop>
       </div>
    );

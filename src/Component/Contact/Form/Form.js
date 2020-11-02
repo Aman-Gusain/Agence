@@ -1,127 +1,78 @@
 import React, { useEffect } from "react";
 import Styles from "./Form.css";
 import $ from "jquery";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+
 const Form = () => {
-   useEffect(() => {
-      (function () {
-         var floatingLabel;
-
-         floatingLabel = (function () {
-            function floatingLabel(form, options) {
-               var event, input, label, _i, _j, _len, _len1, _ref, _ref1;
-               if (options == null) {
-                  options = {};
-               }
-               if (!form) {
-                  return;
-               }
-               options.focusClass || (options.focusClass = "focus");
-               options.activeClass || (options.activeClass = "active");
-               options.errorClass || (options.errorClass = "error");
-               form.classList.add("has-floated-label");
-               _ref = form.querySelectorAll("label");
-               for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-                  label = _ref[_i];
-                  if (
-                     !(input = document.querySelector(
-                        "#" + label.getAttribute("for")
-                     ))
-                  ) {
-                     return;
-                  }
-                  _ref1 = ["keyup", "input", "change"];
-                  for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
-                     event = _ref1[_j];
-                     input.addEventListener(event, function () {
-                        this.parentNode.classList.remove(options.errorClass);
-                        return this.parentNode.classList.toggle(
-                           options.activeClass,
-                           !!this.value
-                        );
-                     });
-                  }
-                  input.addEventListener("focus", function () {
-                     return this.parentNode.classList.add(options.focusClass);
-                  });
-                  input.addEventListener("blur", function () {
-                     return this.parentNode.classList.remove(
-                        options.focusClass
-                     );
-                  });
-                  input.parentNode.classList.toggle(
-                     options.activeClass,
-                     !!input.value
-                  );
-               }
-            }
-
-            return floatingLabel;
-         })();
-
-         window.floatingLabel = new floatingLabel(
-            document.querySelector(".form")
-         );
-      }.call(this));
-   });
    return (
-      <div id="wrapper" data-aos="fade-left" data-aos-duration="1000">
-         <h1 className="head">Get in Touch</h1>
-         <p>
-            Do you have any questions? Please do not hesitate to contact us
-            directly. Our team will come back to you within a matter of hours to
-            help you
-         </p>
-         <div className="form">
-            <form action="" className="form">
-               <p className="field required half">
-                  <label className="label required" htmlFor="name">
-                     Name
-                  </label>
+      <div className="Forma">
+         <div id="container00">
+            <div className="he">
+               <h1> Get in Touch </h1>
+            </div>
+
+            <form action="#" method="post" id="contact_form">
+               <div className="name">
+                  <label className="con" htmlFor="name"></label>
                   <input
-                     className="text-input"
-                     id="name"
+                     className="contact"
+                     type="texta"
+                     placeholder="Your Name"
                      name="name"
+                     id="name_input"
                      required
-                     type="text"
-                  ></input>
-               </p>
-               <p className="field required half">
-                  <label className="label" htmlFor="email">
-                     E-mail
-                  </label>
+                  />
+               </div>
+               <div className="email">
+                  <label className="con" htmlFor="email"></label>
                   <input
-                     className="text-input"
-                     id="email"
+                     className="contact"
+                     type="emaila"
+                     placeholder="Your e-mail "
                      name="email"
+                     id="email_input"
                      required
-                     type="email"
-                  ></input>
-               </p>
-               <p className="field">
-                  <label className="label" htmlFor="message">
-                     Message
-                  </label>
-                  <textarea
-                     className="textarea"
-                     cols="50"
-                     id="message"
-                     name="message"
-                     required
-                     rows="4"
-                  ></textarea>
-               </p>
-               <p className="field">
+                  />
+               </div>
+               <div className="telephone">
+                  <label className="con" htmlFor="name"></label>
                   <input
+                     className="contact"
+                     type="texta"
+                     placeholder="Your number"
+                     name="telephone"
+                     id="telephone_input"
+                     required
+                  />
+               </div>
+               <div className="message">
+                  <label className="con" htmlFor="message"></label>
+                  <textarea
+                     className="contact"
+                     name="message"
+                     placeholder="I'd like to chat about"
+                     id="message_input"
+                     cols="30"
+                     rows="5"
+                     required
+                  ></textarea>
+               </div>
+               <div className="submit">
+                  <button
                      className="button"
                      type="submit"
-                     value="Send message"
-                  ></input>
-               </p>
+                     value="Send Message"
+                     id="form_button"
+                  >
+                     Submit
+                  </button>
+               </div>
             </form>
          </div>
+         <img
+            className="contimg"
+            src={require("../../../contact.png")}
+            alt=""
+         />
       </div>
    );
 };

@@ -4,12 +4,8 @@ section {
 section#about {
    text-align: center;
 }
-/* section h1 {
-   text-align: center;
-} */
-
 .container {
-   padding: 0px 15px 0px 15px;
+   padding: 0px 0px 0px 0px;
 }
 @media (min-width: 0) {
    .container {
@@ -36,9 +32,6 @@ section#about {
    }
 }
 @media only screen and (max-width: 600px) {
-   .log {
-      display: none;
-   }
 }
 @media (min-width: 768px) {
    .container {
@@ -54,7 +47,7 @@ section#about {
 }
 @media (min-width: 992px) {
    .container {
-      max-width: 960px;
+      max-width: 90%;
       margin-left: auto;
       margin-right: auto;
    }
@@ -66,7 +59,7 @@ section#about {
 }
 @media (min-width: 1200px) {
    .container {
-      max-width: 1170px;
+      max-width: 90%px;
       margin-left: auto;
       margin-right: auto;
    }
@@ -76,34 +69,41 @@ section#about {
       clear: both;
    }
 }
+#navigation .active {
+   pointer-events: none;
+   color: #cc3233;
+}
 
 a {
    text-decoration: none;
-   color: rgba(34, 34, 34, 0.8);
+   font-family: "Roboto", sans-serif;
+   font-size: 3rem;
+   color: black;
 }
 a:hover,
 a :focus {
    color: black;
 }
-.active {
-   color: #ff2e63;
-}
 .log {
-   width: 50px;
-   height: 50px;
-   position: absolute;
-   top: 5px;
-   left: 130px;
+   width: 40px;
+   height: 40px;
+   position: relative;
+   top: 0px;
    padding: 0%;
 }
 
 .menu-left a {
+   text-decoration: none;
    display: inline-block;
    position: relative;
    padding-bottom: 0px;
+   font-size: 1.5rem;
+   font-weight: 400;
+
    transition: color 0.35s ease;
 }
 .menu-left a:before {
+   text-decoration: none;
    content: "";
    display: block;
    position: absolute;
@@ -114,6 +114,7 @@ a :focus {
    transition: width 0s ease, background 0.35s ease;
 }
 .menu-left a:after {
+   text-decoration: none;
    content: "";
    display: block;
    position: absolute;
@@ -125,24 +126,37 @@ a :focus {
    transition: width 0.35s ease;
 }
 .menu-left a:hover:before {
+   text-decoration: none;
    width: 100%;
    background: #000;
    transition: width 0.35s ease;
 }
 .menu-left a:hover:after {
+   text-decoration: none;
    width: 100%;
    background: transparent;
    transition: all 0s ease;
 }
+.Name {
+   position: absolute;
+   left: 46%;
+
+   font-size: 2rem;
+   top: 20%;
+   color: #000;
+   text-align: center;
+}
 
 header {
    position: fixed;
+   overflow-x: hidden;
+   border-bottom: solid #000 1px;
    top: 0;
    left: 0;
    width: 100%;
    padding: 0.5rem 0;
-   background: rgba(255, 255, 255, 0.92);
-   z-index: 3;
+   background: #f5f5f5;
+   z-index: 1000;
    will-change: transform;
    transition: background 0.3s,
       -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
@@ -208,6 +222,7 @@ header nav ul li a {
 }
 
 ul.menu-left {
+   text-decoration: none;
    display: block;
    max-height: 0;
    overflow: hidden;
@@ -217,21 +232,26 @@ ul.menu-left {
    -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
    z-index: 10;
+   margin-top: 2px;
 }
 @media (min-width: 768px) {
    ul.menu-left {
+      text-decoration: none;
       display: block !important;
       float: right;
       max-height: none;
    }
 }
 ul.menu-left:before {
+   text-decoration: none;
    content: "";
    display: table;
    clear: both;
 }
 ul.menu-left.collapse {
-   max-height: 15em !important;
+   display: block;
+   text-decoration: none;
+   max-height: 100vh !important;
 }
 
 .nav-toggle {
@@ -243,6 +263,7 @@ ul.menu-left.collapse {
    width: 38px;
    cursor: pointer;
    padding: 8px 8px;
+   margin-top: 10px;
 }
 .nav-toggle.open span:first-child {
    transform: rotate(45deg) translate(4.4px, 4.4px);
@@ -267,4 +288,33 @@ ul.menu-left.collapse {
    margin-top: 4px;
    background-color: #000;
    transition: all 0.25s;
+}
+@media only screen and (max-width: 600px) {
+   .menu-left {
+      text-align: center;
+      height: 95vh;
+   }
+   .collapse {
+      padding-top: 20%;
+   }
+   .menu-left li {
+      padding-top: 15%;
+   }
+   .menu-left li a {
+      height: 5vh;
+      font-size: 3rem;
+   }
+   .Name {
+      display: none;
+   }
+   .logo {
+      margin-left: 5%;
+      width: 38px;
+      height: 38px;
+   }
+   .log {
+      width: 38px;
+      height: 38px;
+      margin-top: 4px;
+   }
 }

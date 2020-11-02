@@ -1,176 +1,195 @@
-#wrapper {
-   width: 50%;
+#container00 {
+   /* border: solid 3px #474544; */
+   max-width: 80%;
+   padding: 5%;
+   position: relative;
+   background-color: #f5f5f5;
 }
-@media only screen and (max-width: 600px) {
-   #wrapper {
-      width: 100%;
-   }
-}
-.head {
-   border: none;
-   padding: 0%;
+.Forma {
+   background-color: #f5f5f5;
    width: 100%;
-   text-align: left;
-   margin: 0;
 }
-.form .text-input,
-.form .textarea,
-.form .label,
-.form .button {
-   padding: 0.5em 1em;
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   outline: none;
-   line-height: normal;
-   border: 1px solid transparent;
-   border-radius: 0;
-}
-
-.form .text-input,
-.form .textarea {
-   font: inherit;
-   line-height: normal;
-   width: 100%;
-   height: 10%;
-   box-sizing: border-box;
-   display: block;
-   padding-left: 0;
-   border-bottom-color: rgba(0, 0, 0, 0.3);
-   background: transparent;
-   outline: none;
-   color: black;
-}
-.form .text-input:placeholder,
-.form .textarea:placeholder {
-   color: rgba(0, 0, 0, 0.7);
-}
-.form .text-input:-webkit-autofill,
-.form .textarea:-webkit-autofill {
-   box-shadow: 0 0 0px 1000px white inset;
-   border-top-color: white;
-   border-left-color: white;
-   border-right-color: white;
-}
-.form .error.text-input,
-.form .error.textarea,
-.error .form .text-input,
-.form .error .text-input,
-.error .form .textarea,
-.form .error .textarea {
-   border-color: transparent transparent red transparent;
-}
-.form:not(.has-floated-label) .text-input:active,
-.form:not(.has-floated-label) .textarea:active,
-.form:not(.has-floated-label) .text-input:focus,
-.form:not(.has-floated-label) .textarea:focus {
-   border-color: transparent transparent black transparent;
-}
-
-.form .label {
-   position: absolute;
-   z-index: 10;
-   pointer-events: none;
-   margin-bottom: 30px;
-   padding-left: 0;
-}
-
-.form .label {
+.button {
+   position: relative;
    top: 0;
    left: 0;
-   font-size: 20px;
-   margin-bottom: 30px;
-   color: rgba(0, 0, 0, 0.7);
-   -webkit-transition: color 0.3s;
-   transition: color 0.3s;
 }
-.active .form .label,
-.form .active .label {
-   font-size: 0.75em;
-   line-height: 1;
-   margin-bottom: 10px;
-   font-weight: 50;
-   font-size: 15px;
-   text-transform: uppercase;
-   padding: 0;
-   color: rgba(0, 0, 0, 0.7);
-   background: white;
+.he {
+   margin-bottom: 5%;
+   text-align: left;
+   margin-top: 5%;
 }
-.focus .form .label,
-.form .focus .label {
-   font-weight: 70;
-   font-size: 15px;
-   margin-bottom: 30px;
-   color: black;
+.he h1 {
+   font-size: 4rem;
+   text-align: left;
 }
 
-.form.has-floated-label .field:after {
-   content: "";
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 0%;
-   border-bottom: 1px solid black;
-   -webkit-transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-   transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+.underline {
+   border-bottom: solid 2px #474544;
+   margin: -0.512em auto;
+   width: 80px;
 }
-
-.form.has-floated-label .field.focus:after {
-   width: 100%;
-}
-
-.form .button {
-   font: inherit;
-   line-height: normal;
-   cursor: pointer;
-   background-color: transparent;
-   color: black;
-   border: solid black 1px;
-   padding: 10px;
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 20px;
-   letter-spacing: 0.1428571429em;
-}
-.form .button:hover,
-.form .button:focus,
-.form .button:active {
-   color: white;
-   background: black;
-}
-.form .button:active {
-   position: relative;
-   top: 1px;
-   left: 1px;
-}
-
-.form {
-   max-width: 100%;
-   margin: 0 auto;
-   padding: 0em 0em;
-   box-sizing: border-box;
-   overflow: hidden;
-}
-.form .field {
-   position: relative;
-   width: 100%;
-   margin-bottom: 0em;
-   float: left;
-}
-@media screen and (min-width: 40em) {
-   .form .field.half {
-      width: calc(50% - 2em);
-      margin-right: 2em;
-   }
-   .form .field.half + .half {
-      margin-left: 2em;
-      margin-right: 0;
-   }
-}
-.form .field:last-child {
+.email {
    float: right;
-   width: auto;
+   width: 45%;
 }
-.form .textarea {
-   max-width: 100%;
+
+input[type="texta"],
+[type="emaila"],
+select,
+textarea {
+   background: none;
+   border: none;
+   border-bottom: solid 2px #474544;
+   color: #474544;
+   font-size: 1em;
+   font-weight: 400;
+
+   letter-spacing: 1px;
+   margin: 0em 0 1.875em 0;
+   padding: 0 0 0.875em 0;
+   /* text-transform: uppercase; */
+   font-family: "IBM Plex Sans", sans-serif;
+   font-size: 1.5rem;
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -ms-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+input[type="texta"]:focus,
+[type="emaila"]:focus,
+textarea:focus {
+   outline: none;
+   padding: 0 0 0.875em 0;
+}
+
+.message {
+   float: none;
+}
+
+.name {
+   float: left;
+   width: 45%;
+}
+
+select {
+   background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+      no-repeat right;
+   outline: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+}
+
+select::-ms-expand {
+   display: none;
+}
+
+.subject {
+   width: 100%;
+}
+
+.telephone {
+   width: 100%;
+}
+
+textarea {
+   line-height: 150%;
+   height: 150px;
+   resize: none;
+   width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #474544;
+}
+
+:-moz-placeholder {
+   color: #474544;
+   opacity: 1;
+}
+
+::-moz-placeholder {
+   color: #474544;
+   opacity: 1;
+}
+
+:-ms-input-placeholder {
+   color: #474544;
+}
+
+@media screen and (max-width: 768px) {
+   #container {
+      margin: 20px auto;
+      width: 95%;
+   }
+   #container00 {
+      padding-top: 20%;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   h1 {
+      font-size: 26px;
+   }
+
+   .underline {
+      width: 68px;
+   }
+
+   #form_button {
+      padding: 15px 25px;
+   }
+   #container00 {
+      padding-top: 20%;
+   }
+}
+
+@media screen and (max-width: 420px) {
+   h1 {
+      font-size: 18px;
+   }
+
+   .icon {
+      height: 35px;
+      width: 35px;
+   }
+
+   .underline {
+      width: 53px;
+   }
+
+   input[type="text"],
+   [type="email"],
+   select,
+   textarea {
+      font-size: 0.875em;
+   }
+   .footerLogo {
+      display: none;
+   }
+}
+.submit {
+   padding-top: 2%;
+}
+.contimg {
+   position: absolute;
+   top: 10%;
+   right: 0;
+}
+@media only screen and (max-width: 600px) {
+   .contimg {
+      width: 80%;
+   }
+   textarea {
+      font-size: 1.5rem;
+      height: 100px;
+   }
 }
