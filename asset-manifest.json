@@ -1,32 +1,34 @@
 {
   "files": {
-    "main.css": "/Agence/static/css/main.7f8935e3.chunk.css",
-    "main.js": "/Agence/static/js/main.791d69eb.chunk.js",
-    "main.js.map": "/Agence/static/js/main.791d69eb.chunk.js.map",
+    "main.css": "/Agence/static/css/main.7a18d449.chunk.css",
+    "main.js": "/Agence/static/js/main.ff734c6e.chunk.js",
+    "main.js.map": "/Agence/static/js/main.ff734c6e.chunk.js.map",
     "runtime-main.js": "/Agence/static/js/runtime-main.4ed8951e.js",
     "runtime-main.js.map": "/Agence/static/js/runtime-main.4ed8951e.js.map",
     "static/css/2.5a99b70f.chunk.css": "/Agence/static/css/2.5a99b70f.chunk.css",
-    "static/js/2.34036435.chunk.js": "/Agence/static/js/2.34036435.chunk.js",
-    "static/js/2.34036435.chunk.js.map": "/Agence/static/js/2.34036435.chunk.js.map",
+    "static/js/2.714a12b2.chunk.js": "/Agence/static/js/2.714a12b2.chunk.js",
+    "static/js/2.714a12b2.chunk.js.map": "/Agence/static/js/2.714a12b2.chunk.js.map",
     "index.html": "/Agence/index.html",
-    "precache-manifest.76045ccd094dc21eea76f985b885328b.js": "/Agence/precache-manifest.76045ccd094dc21eea76f985b885328b.js",
+    "precache-manifest.89d1082c68360191038bbd996e2dc0a0.js": "/Agence/precache-manifest.89d1082c68360191038bbd996e2dc0a0.js",
     "service-worker.js": "/Agence/service-worker.js",
     "static/css/2.5a99b70f.chunk.css.map": "/Agence/static/css/2.5a99b70f.chunk.css.map",
-    "static/css/main.7f8935e3.chunk.css.map": "/Agence/static/css/main.7f8935e3.chunk.css.map",
-    "static/js/2.34036435.chunk.js.LICENSE.txt": "/Agence/static/js/2.34036435.chunk.js.LICENSE.txt",
+    "static/css/main.7a18d449.chunk.css.map": "/Agence/static/css/main.7a18d449.chunk.css.map",
+    "static/js/2.714a12b2.chunk.js.LICENSE.txt": "/Agence/static/js/2.714a12b2.chunk.js.LICENSE.txt",
+    "static/media/Agence Character phone (1).png": "/Agence/static/media/Agence Character phone (1).e0f37e2d.png",
+    "static/media/Agence Character together (3).png": "/Agence/static/media/Agence Character together (3).3bf6d7ac.png",
     "static/media/agence-logo-black.png": "/Agence/static/media/agence-logo-black.4256689d.png",
     "static/media/circle-cropped (1).png": "/Agence/static/media/circle-cropped (1).ebe9eb1b.png",
     "static/media/contact.png": "/Agence/static/media/contact.384606fa.png",
-    "static/media/home.png": "/Agence/static/media/home.f6d4e383.png",
+    "static/media/planet2 (1).png": "/Agence/static/media/planet2 (1).d4d54c58.png",
     "static/media/scentra.png": "/Agence/static/media/scentra.93556cd4.png",
     "static/media/slick-theme.css": "/Agence/static/media/slick.f97e3bbf.svg",
-    "static/media/waters.png": "/Agence/static/media/waters.abbc9c79.png"
+    "static/media/spaceship (1).png": "/Agence/static/media/spaceship (1).801d58ae.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4ed8951e.js",
     "static/css/2.5a99b70f.chunk.css",
-    "static/js/2.34036435.chunk.js",
-    "static/css/main.7f8935e3.chunk.css",
-    "static/js/main.791d69eb.chunk.js"
+    "static/js/2.714a12b2.chunk.js",
+    "static/css/main.7a18d449.chunk.css",
+    "static/js/main.ff734c6e.chunk.js"
   ]
 }
