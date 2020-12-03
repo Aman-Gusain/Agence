@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/Agence/static/css/main.1cdf60ec.chunk.css",
-    "main.js": "/Agence/static/js/main.f35bcf4d.chunk.js",
-    "main.js.map": "/Agence/static/js/main.f35bcf4d.chunk.js.map",
+    "main.css": "/Agence/static/css/main.f5cb5bfe.chunk.css",
+    "main.js": "/Agence/static/js/main.dff8ea2f.chunk.js",
+    "main.js.map": "/Agence/static/js/main.dff8ea2f.chunk.js.map",
     "runtime-main.js": "/Agence/static/js/runtime-main.4ed8951e.js",
     "runtime-main.js.map": "/Agence/static/js/runtime-main.4ed8951e.js.map",
     "static/css/2.5a99b70f.chunk.css": "/Agence/static/css/2.5a99b70f.chunk.css",
-    "static/js/2.14e90543.chunk.js": "/Agence/static/js/2.14e90543.chunk.js",
-    "static/js/2.14e90543.chunk.js.map": "/Agence/static/js/2.14e90543.chunk.js.map",
+    "static/js/2.9dd5426e.chunk.js": "/Agence/static/js/2.9dd5426e.chunk.js",
+    "static/js/2.9dd5426e.chunk.js.map": "/Agence/static/js/2.9dd5426e.chunk.js.map",
     "index.html": "/Agence/index.html",
-    "precache-manifest.d3e11094ba2491648b87c8e4a95a812d.js": "/Agence/precache-manifest.d3e11094ba2491648b87c8e4a95a812d.js",
+    "precache-manifest.5ab18e145572100681ba487e8892de41.js": "/Agence/precache-manifest.5ab18e145572100681ba487e8892de41.js",
     "service-worker.js": "/Agence/service-worker.js",
     "static/css/2.5a99b70f.chunk.css.map": "/Agence/static/css/2.5a99b70f.chunk.css.map",
-    "static/css/main.1cdf60ec.chunk.css.map": "/Agence/static/css/main.1cdf60ec.chunk.css.map",
-    "static/js/2.14e90543.chunk.js.LICENSE.txt": "/Agence/static/js/2.14e90543.chunk.js.LICENSE.txt",
+    "static/css/main.f5cb5bfe.chunk.css.map": "/Agence/static/css/main.f5cb5bfe.chunk.css.map",
+    "static/js/2.9dd5426e.chunk.js.LICENSE.txt": "/Agence/static/js/2.9dd5426e.chunk.js.LICENSE.txt",
     "static/media/Agence Character phone (1).png": "/Agence/static/media/Agence Character phone (1).a7c2bf22.png",
     "static/media/Agence Character together (3).png": "/Agence/static/media/Agence Character together (3).31030d63.png",
     "static/media/agence-logo-black.png": "/Agence/static/media/agence-logo-black.4256689d.png",
-    "static/media/circle-cropped (1).png": "/Agence/static/media/circle-cropped (1).ebe9eb1b.png",
+    "static/media/lab elements1 (1).png": "/Agence/static/media/lab elements1 (1).534628a8.png",
+    "static/media/lab elements3 (1).png": "/Agence/static/media/lab elements3 (1).da0b337c.png",
+    "static/media/lab illustration final.png": "/Agence/static/media/lab illustration final.e803c833.png",
     "static/media/laptop male (1) (1).png": "/Agence/static/media/laptop male (1) (1).73bf50c0.png",
     "static/media/planet2 (1).png": "/Agence/static/media/planet2 (1).50939d8e.png",
     "static/media/scentra.jpg": "/Agence/static/media/scentra.e326a71d.jpg",
@@ -26,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.4ed8951e.js",
     "static/css/2.5a99b70f.chunk.css",
-    "static/js/2.14e90543.chunk.js",
-    "static/css/main.1cdf60ec.chunk.css",
-    "static/js/main.f35bcf4d.chunk.js"
+    "static/js/2.9dd5426e.chunk.js",
+    "static/css/main.f5cb5bfe.chunk.css",
+    "static/js/main.dff8ea2f.chunk.js"
   ]
 }
