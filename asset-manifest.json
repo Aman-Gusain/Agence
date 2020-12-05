@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Agence/static/css/main.56da3fa8.chunk.css",
+    "main.css": "/Agence/static/css/main.bb4b60a6.chunk.css",
     "main.js": "/Agence/static/js/main.8ab76fdc.chunk.js",
     "main.js.map": "/Agence/static/js/main.8ab76fdc.chunk.js.map",
     "runtime-main.js": "/Agence/static/js/runtime-main.4ed8951e.js",
@@ -9,10 +9,10 @@
     "static/js/2.857ee277.chunk.js": "/Agence/static/js/2.857ee277.chunk.js",
     "static/js/2.857ee277.chunk.js.map": "/Agence/static/js/2.857ee277.chunk.js.map",
     "index.html": "/Agence/index.html",
-    "precache-manifest.d65ac597a493f7fc9ecfe6cfa1a9ec5e.js": "/Agence/precache-manifest.d65ac597a493f7fc9ecfe6cfa1a9ec5e.js",
+    "precache-manifest.6bd69972c76599b0aae99aa423e8ef95.js": "/Agence/precache-manifest.6bd69972c76599b0aae99aa423e8ef95.js",
     "service-worker.js": "/Agence/service-worker.js",
     "static/css/2.5a99b70f.chunk.css.map": "/Agence/static/css/2.5a99b70f.chunk.css.map",
-    "static/css/main.56da3fa8.chunk.css.map": "/Agence/static/css/main.56da3fa8.chunk.css.map",
+    "static/css/main.bb4b60a6.chunk.css.map": "/Agence/static/css/main.bb4b60a6.chunk.css.map",
     "static/js/2.857ee277.chunk.js.LICENSE.txt": "/Agence/static/js/2.857ee277.chunk.js.LICENSE.txt",
     "static/media/Agence Character phone (1).png": "/Agence/static/media/Agence Character phone (1).a7c2bf22.png",
     "static/media/Agence Character together (3).png": "/Agence/static/media/Agence Character together (3).31030d63.png",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.4ed8951e.js",
     "static/css/2.5a99b70f.chunk.css",
     "static/js/2.857ee277.chunk.js",
-    "static/css/main.56da3fa8.chunk.css",
+    "static/css/main.bb4b60a6.chunk.css",
     "static/js/main.8ab76fdc.chunk.js"
   ]
 }
