@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f15d84d308204e40f6c348beecd4400",
+    "revision": "4ee9b3c1e655392af5e5c778c703d568",
     "url": "/Agence/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/css/2.5a99b70f.chunk.css"
   },
   {
-    "revision": "3f32deb610aa72e0398f",
+    "revision": "07bb936ef20bd45f0606",
     "url": "/Agence/static/css/main.54fdb500.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/js/2.2e6b712f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3f32deb610aa72e0398f",
-    "url": "/Agence/static/js/main.f3df7f0a.chunk.js"
+    "revision": "07bb936ef20bd45f0606",
+    "url": "/Agence/static/js/main.05001aa3.chunk.js"
   },
   {
     "revision": "929571137253e99a22f9",
@@ -32,16 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/media/Agence Character phone (1).7cbafbfc.png"
   },
   {
-    "revision": "31030d6329a73423702d6431dc64eef4",
-    "url": "/Agence/static/media/Agence Character together (3).31030d63.png"
+    "revision": "d1e1a9211747a73b66fc252d593bb66d",
+    "url": "/Agence/static/media/Agence Character together (3).d1e1a921.png"
   },
   {
-    "revision": "4256689d930ba7458bd83cfe29487e91",
-    "url": "/Agence/static/media/agence-logo-black.4256689d.png"
-  },
-  {
-    "revision": "ebe9eb1bce533cdf44fe7bd1a44a8746",
-    "url": "/Agence/static/media/circle-cropped (1).ebe9eb1b.png"
+    "revision": "ec0f3e6db0c2f539c9d0d587fe9f8059",
+    "url": "/Agence/static/media/circle-cropped (1).ec0f3e6d.png"
   },
   {
     "revision": "9502e131364f97d5ca968eca35e46dfd",
