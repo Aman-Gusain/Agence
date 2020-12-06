@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0aaf331819edadde145502fbf9e763c4",
+    "revision": "6f15d84d308204e40f6c348beecd4400",
     "url": "/Agence/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/css/2.5a99b70f.chunk.css"
   },
   {
-    "revision": "0c86baf6b61b82265bb3",
+    "revision": "3f32deb610aa72e0398f",
     "url": "/Agence/static/css/main.54fdb500.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/js/2.2e6b712f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c86baf6b61b82265bb3",
-    "url": "/Agence/static/js/main.dcc61705.chunk.js"
+    "revision": "3f32deb610aa72e0398f",
+    "url": "/Agence/static/js/main.f3df7f0a.chunk.js"
   },
   {
     "revision": "929571137253e99a22f9",
     "url": "/Agence/static/js/runtime-main.4ed8951e.js"
   },
   {
-    "revision": "a7c2bf22b2afeba33f1688be52bc6c92",
-    "url": "/Agence/static/media/Agence Character phone (1).a7c2bf22.png"
+    "revision": "7cbafbfc3d9c00cdf026753a1a2feee6",
+    "url": "/Agence/static/media/Agence Character phone (1).7cbafbfc.png"
   },
   {
     "revision": "31030d6329a73423702d6431dc64eef4",
@@ -44,20 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/media/circle-cropped (1).ebe9eb1b.png"
   },
   {
-    "revision": "3fac320e862e001e674a749cad2dc2b2",
-    "url": "/Agence/static/media/lab elements3 (1).3fac320e.png"
+    "revision": "9502e131364f97d5ca968eca35e46dfd",
+    "url": "/Agence/static/media/lab illustration final.9502e131.png"
   },
   {
-    "revision": "e803c8338b6f25d1ea5ec88cc0d91c9a",
-    "url": "/Agence/static/media/lab illustration final.e803c833.png"
-  },
-  {
-    "revision": "73bf50c0e792ed2553611dc7f55b0dfd",
-    "url": "/Agence/static/media/laptop male (1) (1).73bf50c0.png"
-  },
-  {
-    "revision": "50939d8e3aeda9d20b806b5d0e3fd794",
-    "url": "/Agence/static/media/planet2 (1).50939d8e.png"
+    "revision": "9f3a8abab03b02d0c8632f4996bfe377",
+    "url": "/Agence/static/media/laptop male (1) (1).9f3a8aba.png"
   },
   {
     "revision": "e326a71d364009611dfc81ad1c23ed83",
