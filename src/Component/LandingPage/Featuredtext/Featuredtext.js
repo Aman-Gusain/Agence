@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./Featuredtext.css";
+import "./Featuredtext.css";
 
 const Featuredtext = () => {
    return (

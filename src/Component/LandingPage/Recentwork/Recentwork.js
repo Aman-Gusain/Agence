@@ -1,56 +1,62 @@
-import React from "react";
-import Styles from "./Recentwork.css";
+import React, { useEffect } from "react";
+import "./Recentwork.css";
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Recentwork = () => {
+   useEffect(() => {
+      AOS.init({
+         duration: 1400,
+      });
+   }, []);
    return (
       <div className="Recentwork">
-         <div className="container-fluid mt-2">
-            <h2 className="section-heading">RECENT WORK</h2>
-            <div className="card-columns">
-               <a className="card card-reveal" href="/work/yellowdoor">
-                  <img
-                     className="card-img-top look"
-                     src="https://source.unsplash.com/jTGjg-NDLyM/600x400"
-                  />
-                  <div className="card-body">
-                     <div className="card-title">Look forward</div>
+         <h2 className="section-heading">
+            <span className="left" data-aos="fade-left"></span> RECENT WORK{" "}
+            <span className="right" data-aos="fade-right"></span>
+         </h2>
+         <div className="row">
+            <div className="container-work">
+               <div className="test_box box-01 col-xs-12 col-md-12">
+                  <div className="inner">
+                     <Link to="/yellowdoor" className="test_click">
+                        <div className="flex_this">
+                           <span className="test_title">
+                              Yellow Door - Branding and Designing
+                           </span>
+                        </div>
+                     </Link>
                   </div>
-               </a>
-
-               <a className="card card-reveal" href="#">
-                  <img
-                     className="card-img-top"
-                     src="https://source.unsplash.com/fqgt7A43-K0/400x500"
-                  />
-                  <div className="card-body">
-                     <div className="card-title">Umbrella kiss</div>
+               </div>
+               <div className="test_box box-02 col-xs-12 col-md-6">
+                  <div className="inner">
+                     <Link to="/yellowdoor" className="test_click">
+                        <div className="flex_this">
+                           <span className="test_title">
+                              Yellow Door - Branding and Designing
+                           </span>
+                        </div>
+                     </Link>
                   </div>
-               </a>
-
-               <a className="card card-reveal" href="#">
-                  <img
-                     className="card-img-top"
-                     src="https://source.unsplash.com/WxFRIj4KGTk/400x600"
-                  />
-                  <div className="card-body">
-                     <div className="card-title">The Tulip</div>
+               </div>
+               <div className="test_box box-03 col-xs-12 col-md-6">
+                  <div className="inner">
+                     <Link to="/yellowdoor" className="test_click">
+                        <div className="flex_this">
+                           <span className="test_title">
+                              Yellow Door - Branding and Designing
+                           </span>
+                        </div>
+                     </Link>
                   </div>
-               </a>
-
-               <a className="card card-reveal" href="#">
-                  <img
-                     className="card-img-top"
-                     src="https://source.unsplash.com/4nMr12C6Pw8/400x500"
-                  />
-                  <div className="card-body">
-                     <div className="card-title">Read to smile</div>
-                  </div>
-               </a>
+               </div>
             </div>
          </div>
-         <a href="/work">
+
+         <Link to="/work">
             <button className="button">Show more</button>
-         </a>
+         </Link>
       </div>
    );
 };

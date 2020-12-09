@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-   <div className="back">
+   <div className="backww">
       <App />
    </div>,
    document.getElementById("root")

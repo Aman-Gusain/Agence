@@ -1,9 +1,13 @@
 #container00 {
    /* border: solid 3px #474544; */
    max-width: 80%;
-   padding: 5%;
+   padding-top: 8%;
+   padding-bottom: 5%;
+   padding-right: 5%;
+   padding-left: 3%;
+   z-index: 1;
    position: relative;
-   background-color: #f5f5f5;
+   /* background-color: #f5f5f5; */
 }
 .Forma {
    background-color: #f5f5f5;
@@ -17,7 +21,6 @@
 .he {
    margin-bottom: 5%;
    text-align: left;
-   margin-top: 5%;
 }
 .he h1 {
    font-size: 4rem;
@@ -34,8 +37,8 @@
    width: 45%;
 }
 
-input[type="texta"],
-[type="emaila"],
+input[type='texta'],
+[type='emaila'],
 select,
 textarea {
    background: none;
@@ -49,7 +52,7 @@ textarea {
    margin: 0em 0 1.875em 0;
    padding: 0 0 0.875em 0;
    /* text-transform: uppercase; */
-   font-family: "IBM Plex Sans", sans-serif;
+   font-family: 'IBM Plex Sans', sans-serif;
    font-size: 1.5rem;
    width: 100%;
    -webkit-box-sizing: border-box;
@@ -64,8 +67,8 @@ textarea {
    transition: all 0.3s;
 }
 
-input[type="texta"]:focus,
-[type="emaila"]:focus,
+input[type='texta']:focus,
+[type='emaila']:focus,
 textarea:focus {
    outline: none;
    padding: 0 0 0.875em 0;
@@ -81,7 +84,7 @@ textarea:focus {
 }
 
 select {
-   background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+   background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png')
       no-repeat right;
    outline: none;
    -moz-appearance: none;
@@ -166,8 +169,8 @@ textarea {
       width: 53px;
    }
 
-   input[type="text"],
-   [type="email"],
+   input[type='text'],
+   [type='email'],
    select,
    textarea {
       font-size: 0.875em;
@@ -181,15 +184,87 @@ textarea {
 }
 .contimg {
    position: absolute;
-   top: 10%;
+   top: 3rem;
+   width: 50%;
    right: 0;
 }
 @media only screen and (max-width: 600px) {
+   #container00 {
+      padding-left: 7%;
+      max-width: 96% !important;
+      padding-top: 30%;
+      padding-bottom: 25%;
+   }
+   .he {
+      padding-bottom: 2rem;
+   }
    .contimg {
       width: 80%;
+      display: none;
    }
    textarea {
       font-size: 1.5rem;
       height: 100px;
+   }
+   .Forma {
+      height: 100%;
+   }
+   .social_media {
+      margin: auto;
+      display: block;
+      background-color: rgb(22, 22, 22);
+      text-align: center;
+      margin-top: 2rem !important;
+      width: 100% !important;
+   }
+   .footer_container {
+      padding: 0 !important;
+   }
+   .social_media a {
+      color: #f5f5f5 !important;
+   }
+}
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation: portrait) {
+   .x {
+      margin-left: 0;
+      margin-top: 1rem;
+   }
+   .footerhead {
+      width: 100%;
+   }
+   #container00 {
+      margin-top: 10vh;
+      padding-bottom: 5rem;
+      max-width: 100%;
+   }
+   .contimg {
+      margin-top: 5vh;
+      width: 70%;
+   }
+   .container0 {
+      padding-left: 4rem !important;
+   }
+   .container0 .group {
+      width: 35%;
+   }
+   .footerLogo {
+      display: none;
+   }
+   .copyright {
+      width: 100% !important;
+   }
+   .social_media {
+      margin: auto;
+      display: block;
+      background-color: rgb(22, 22, 22);
+      text-align: center;
+      margin-top: 2rem !important;
+      width: 100% !important;
+   }
+   .footer_container {
+      padding: 0 !important;
+   }
+   .social_media a {
+      color: #f5f5f5 !important;
    }
 }

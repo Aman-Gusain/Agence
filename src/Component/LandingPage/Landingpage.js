@@ -3,15 +3,16 @@ import Title from "./Title/Title";
 import Featuredtext from "./Featuredtext/Featuredtext";
 import Featuredwork from "./FeaturedWork/Featuredwork";
 import Recentwork from "./Recentwork/Recentwork";
-import Services from "./Services/Services";
+// import Services from "./Services/Services";
+import "./Landingpage.css";
 
 const Landingpage = () => {
    return (
-      <div>
+      <div className="pages">
          <Title />
          <Featuredtext />
          <Featuredwork />
-         <Services />
+         {/* <Services /> */}
          <Recentwork />
       </div>
    );

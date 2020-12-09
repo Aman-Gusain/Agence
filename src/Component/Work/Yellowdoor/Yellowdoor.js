@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import Styles from "./Yellowdoor.css";
-import $ from "jquery";
+import React from "react";
+import "./Yellowdoor.css";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 const Yellowdoor = () => {
@@ -46,18 +45,18 @@ const Yellowdoor = () => {
 
          <section className="section-c">
             <div className="gallery">
-               <a onClick={() => setToggler(!toggler)} className="big">
-                  <img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt="" />
-               </a>
-               <a onClick={() => setToggler(!toggler)} className="big">
-                  <img src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt="" />
-               </a>
-               <a onClick={() => setToggler(!toggler)} className="big">
-                  <img src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt="" />
-               </a>
-               <a onClick={() => setToggler(!toggler)} className="big">
-                  <img src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt="" />
-               </a>
+               <div onClick={() => setToggler(!toggler)} className="big">
+                  <img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt="a" />
+               </div>
+               <div onClick={() => setToggler(!toggler)} className="big">
+                  <img src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt="a" />
+               </div>
+               <div onClick={() => setToggler(!toggler)} className="big">
+                  <img src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt="aaa" />
+               </div>
+               <div onClick={() => setToggler(!toggler)} className="big">
+                  <img src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt="a" />
+               </div>
             </div>
          </section>
          <FsLightbox

@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import Styles from "./Form.css";
-import $ from "jquery";
+import React from 'react'
+import './Form.css'
 
 const Form = () => {
    return (
@@ -70,11 +69,11 @@ const Form = () => {
          </div>
          <img
             className="contimg"
-            src={require("../../../contact.png")}
+            src={require('../../../laptop male (1) (1).png')}
             alt=""
          />
       </div>
-   );
-};
+   )
+}
 
-export default Form;
+export default Form

@@ -11,134 +11,179 @@
    left: 43%;
    top: 50px;
 }
-.container-fluid {
-   width: 95%;
-}
-.card-reveal {
-   width: 150%;
-   height: 35rem;
-}
-.card-reveal .card-body {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   position: absolute;
-   bottom: 0;
-   height: 100%;
-   width: 100%;
-   text-align: center;
-}
-
-.card-reveal .card-body .card-title {
-   font-size: 1.5rem;
-   margin: 0;
-   font-family: "IBM Plex Sans", sans-serif;
-   color: black;
-}
 .section-heading {
    text-transform: uppercase;
    display: block;
+   color: #161d1c;
    text-align: center;
    padding-bottom: 3rem;
    font-size: 4rem;
    margin: 30px 0;
 }
-.section-heading:before {
+.section-heading .left {
+   overflow-y: hidden;
    content: "";
    position: absolute;
    left: 0;
    margin-top: 2.5rem;
    height: 0.4rem;
-   width: 30vw;
-   background: linear-gradient(
-      90deg,
-      rgba(255, 77, 77, 0.6) 10%,
-      rgba(255, 255, 255, 0)
-   );
+   width: 25vw;
+   background: linear-gradient(90deg, #ff9700 10%, rgba(255, 255, 255, 0));
 }
-.section-heading:after {
+.section-heading .right {
+   overflow-y: hidden;
    content: "";
    position: absolute;
    right: 0;
    margin-top: 2.5rem;
    height: 0.4rem;
-   width: 30vw;
-   background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 77, 77, 0.6)
-   );
+   width: 25vw;
+   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, #ff9700);
 }
 
-@media (min-width: 992px) {
-   .card-columns {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-   }
-   .card-reveal .card-body {
-      height: 15%;
-      bottom: -100%;
-      background-color: #f5f5f5;
-      -webkit-transition: bottom 0.4s ease-in-out;
-      transition: bottom 0.4s ease-in-out;
-   }
-
-   .card-reveal .card-img-top {
-      width: 100%;
-      height: 50rem;
-      margin: auto;
-      -webkit-transition: -webkit-transform 0.4s ease-in-out;
-      transition: -webkit-transform 0.4s ease-in-out;
-      transition: transform 0.4s ease-in-out;
-      transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-   }
-
-   .card-reveal:hover .card-body {
-      bottom: 0;
-      background-color: #f5f5f5;
-   }
-
-   .card-reveal:hover .card-img-top {
-      -webkit-transform: scale(1.02);
-      transform: scale(1.02);
-   }
+.row {
+   margin: 0;
+}
+.container-work {
+   width: 95%;
+   margin: auto;
 }
 
-@media (min-width: 576px) and (max-width: 1199.98px) {
-   .card-columns {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-   }
+.test_box {
+   padding: 0;
+   float: right;
+}
+.test_box .inner {
+   background: #333;
+   display: block;
+   margin: 10px;
+   overflow: hidden;
+}
+.test_box .inner .test_click {
+   -webkit-align-content: center;
+   -ms-flex-line-pack: center;
+   align-content: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.1);
+   color: #fff;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   flex-wrap: wrap;
+   height: 100%;
+   mix-blend-mode: normal;
+   text-align: center;
+   text-decoration: none;
+   -webkit-transition: all 300ms ease;
+   transition: all 300ms ease;
+}
+/* .test_box .inner .test_click:hover {
+   background-color: ;
+   opacity: 0.3;
+} */
+.test_box .inner .test_click:hover {
+   background-color: rgb(82, 78, 78);
+   mix-blend-mode: hard-light;
+}
+.flex_this {
+   -webkit-align-content: center;
+   -ms-flex-line-pack: center;
+   align-content: center;
+   display: inherit;
+   flex-wrap: inherit;
+   height: auto;
+   margin: 0;
+   padding: 10px;
+   -webkit-transition: all 300ms ease;
+   transition: all 300ms ease;
+   width: 100%;
+}
+.test_box .inner .test_click:hover .flex_this {
+   margin-top: -5px;
+}
+
+.test_title {
+   display: block;
+   font-size: 2rem;
+   font-weight: 400;
+   margin: auto;
+   width: 85%;
+   text-align: left;
+   position: absolute;
+   bottom: 3rem;
+   left: 2rem;
+}
+.test_link {
+   border: 2px solid #fff;
+   display: inline-block;
+   font-size: 0.8em;
+   font-weight: 700;
+   letter-spacing: 0.1em;
+   margin: 0 auto;
+   padding: 10px 30px;
+   text-transform: uppercase;
+}
+
+.box-01 .inner {
+   background-image: url("https://picsum.photos/1024/768?image=1033");
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 30rem;
+}
+.box-02 .inner {
+   background-image: url("https://picsum.photos/1024/768?image=967");
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 30rem;
+}
+.box-03 .inner {
+   background-image: url("https://picsum.photos/1024/768?image=924");
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 30rem;
 }
 @media only screen and (max-width: 600px) {
-   .Recentwork .container-fluid {
-      padding: 0;
-   }
-   .card-reveal {
-      margin: auto;
-      width: 90%;
-      background-color: #f5f5f5;
-   }
-   .card-body {
-      padding: 0;
-   }
-   .card-title {
-      color: black;
-      position: relative;
-      top: 47%;
-      width: 100%;
-      background-color: #f5f5f5;
-   }
    .Recentwork button {
       position: relative;
       top: 10px;
       left: 35%;
    }
-   .card-img-top {
-      width: 100%;
-      height: 60vh;
-      margin: auto;
+
+   .section-heading .right {
+      content: "";
+      position: absolute;
+      right: 0;
+      margin-top: 1.5rem;
+      height: 0.4rem;
+      width: 16vw;
+      background: linear-gradient(90deg, 10%, #ff9700);
+   }
+   .section-heading .left {
+      content: "";
+      position: absolute;
+      left: 0;
+      margin-top: 1.5rem;
+      height: 0.4rem;
+      width: 16vw;
+      background: linear-gradient(90deg, #ff9700 10%, rgba(255, 255, 255, 0));
+   }
+   .section-heading {
+      padding-bottom: 0 !important;
+   }
+}
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation: portrait) {
+   .left {
+      width: 8rem !important;
+   }
+   .right {
+      width: 8rem !important;
+   }
+   .Recentwork button {
+      left: 38% !important;
    }
 }

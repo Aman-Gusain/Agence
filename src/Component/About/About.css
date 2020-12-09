@@ -6,7 +6,7 @@
    }
 }
 .abv {
-   padding-top: 30vh;
+   padding-top: 15rem;
 }
 /*.........About Intro..........*/
 .About {
@@ -36,18 +36,7 @@
       margin-top: 14vh;
    }
 }
-/*.........About-1-sec............*/
 
-.ab-i {
-   position: absolute;
-   background-image: url(https://rise.co/assets/images/global/about-bg.png);
-   background-size: cover;
-   background-position: center center;
-   height: 80vh;
-   width: 70%;
-   bottom: 0;
-   right: 0;
-}
 .a-state {
    position: relative;
    text-align: left;
@@ -100,8 +89,8 @@
    color: #131530;
 }
 .a-state h3:before {
-   background: #cc3233;
-   content: "";
+   background: #ff9700;
+   content: '';
    display: inline-block;
    height: 1px;
    left: 0;
@@ -111,13 +100,10 @@
    vertical-align: middle;
    width: 40px;
 }
-/*.......Letter Animation.............*/
-
-/*..........Arrow............*/
 
 .arrow {
    position: absolute;
-   top: 91vh;
+   top: 91%;
    left: 50%;
    bottom: 0;
    z-index: 90;
@@ -126,19 +112,7 @@
    overflow: hidden;
    overflow-y: hidden;
 }
-/* .arrow svg {
-   position: absolute;
-   height: 30px;
-   left: 0;
-   top: 50%;
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
-   fill: #cc3233;
-   animation-name: slideInUp;
-   animation-fill-mode: both;
-   animation-duration: 1.5s;
-   animation-delay: 1.4s;
-} */
+
 @media (max-width: 767px) {
    .arrow {
       bottom: 4vh;
@@ -151,7 +125,17 @@
    position: relative;
    height: 100%;
    width: 100%;
-   padding-bottom: 10vh;
+}
+#about-3 {
+   height: 100%;
+   background-color: #094b3f;
+   margin-top: 3rem;
+}
+#about-3 h1 {
+   color: whitesmoke;
+}
+#about-3 p {
+   color: whitesmoke;
 }
 
 @media (max-width: 767px) {
@@ -162,9 +146,9 @@
 }
 .ab-block {
    position: relative;
-   width: 80%;
+   width: 90%;
    height: 100%;
-   margin: 10vh 5%;
+   margin: 10% 5%;
 }
 @media (max-width: 767px) {
    .ab-block {
@@ -172,23 +156,16 @@
       width: 80%;
       position: relative;
       transform: none;
-      margin-bottom: 5vh;
-      margin: 10vh 0;
+      /* margin-bottom: 5vh;
+      margin: 10vh 0; */
    }
-}
-@media (max-width: 767px) {
-   .ab3 {
-      width: 100% !important;
-   }
-}
-.abb-2 {
-   margin: 16vh 0 !important;
 }
 
 .ab-block h2 {
    font-size: 1.8rem;
    font-weight: 200;
-   line-height: 5vh;
+   /* line-height: 5vh; */
+   line-height: 2.5rem;
    margin: 0 0 0px;
    /* font-family: "Freight"; */
    text-transform: none;
@@ -221,112 +198,34 @@
    color: #131530;
 }
 
-/*...........Image..............*/
-/*...................*/
-
-.ab-l {
-   position: absolute;
-   left: 6%;
-   font-size: 20rem;
-   font-weight: 700;
-   line-height: 6vh;
-   margin: 0 0 0px;
-   /* font-family: "Poppins", serif; */
-   text-transform: none;
-   letter-spacing: -0.5px;
-   color: transparent;
-   -webkit-text-stroke: 2px #131530;
-   top: 50vh;
-   z-index: 2;
-}
-.ab-l2 {
-   color: transparent;
-   -webkit-text-stroke: 2px #cc3233 !important;
-   left: 34vw !important;
-   top: 50vh !important;
-}
-@media (max-width: 767px) {
-   .ab-l2 {
-      left: 5vw !important;
-      margin-top: -4vh;
-   }
-}
-.ab-l3 {
-   top: 48vh !important;
-}
-@media (max-width: 767px) {
-   .ab-l {
-      opacity: 0.4;
-      top: 0;
-      right: 1vw !important;
-      left: 60%;
-      font-size: 16rem;
-   }
-}
-@media (max-width: 767px) {
-   .ab-l3 {
-      opacity: 0.4;
-      top: 0 !important;
-      right: 1vw !important;
-      left: 60%;
-      font-size: 16rem;
-   }
-}
-.ab-l4 {
-   color: transparent;
-   -webkit-text-stroke: 2px #cc3233 !important;
-   left: 31.3vw !important;
-   top: 38vh !important;
-   animation-name: slideInUp;
-   animation-fill-mode: both;
-   animation-duration: 1.5s;
-   animation-delay: 0.4s;
-}
-/*.............Lists.........*/
-
-.n-menu {
-   display: flex;
-   flex-direction: column;
-   /* font-family: "Poppins", serif; */
-   color: #131530;
-   justify-content: left;
-   top: 2rem;
-   bottom: 0;
-}
-.n-menu li {
-   overflow: hidden;
-}
-.n-two {
-   font-size: 1rem;
-   float: left;
-   font-weight: 500;
-   letter-spacing: 0.5px;
-   text-transform: uppercase;
-   margin-top: 1em;
-   line-height: 2.1rem;
-   margin: 0;
-   padding: 0;
-}
 @media only screen and (max-width: 600px) {
    #about {
-      height: 40vh;
+      height: 50rem;
       padding-top: 40%;
+      padding-left: 4%;
       padding-bottom: 60%;
+   }
+   #about-2 .tog {
+      top: 4rem !important;
    }
    #about-2 {
       padding-bottom: 0;
       margin-bottom: 0;
+      padding-left: 4%;
+   }
+   .abouth {
+      font-size: 3rem;
+      width: 100% !important;
    }
    .abouimg {
-      width: 100%;
+      display: block;
+      width: 40% !important;
       margin-top: 40px;
    }
    .arrow {
       display: none;
    }
-   .pop {
-      display: none;
-   }
+
    .container-fluid {
       padding-bottom: 10%;
       padding-top: 0%;
@@ -335,12 +234,86 @@
       margin-left: 5%;
    }
    .About {
-      padding-left: 4%;
+      padding-left: 0%;
+   }
+   .ab-block {
+      margin: 20% 0%;
+      width: 100%;
+      line-height: 1rem !important;
+   }
+   .ab-block h2 {
+      line-height: 2rem !important;
+      padding-bottom: 10px;
    }
 }
 
 .abouimg {
    position: absolute;
-   top: 10%;
-   right: 0;
+   bottom: 0%;
+   right: 6%;
+   width: 18rem;
+}
+.ab {
+   padding: 3%;
+}
+.ab h1 {
+   text-align: left;
+   font-size: 3rem;
+}
+.ab p {
+   font-size: 1.5rem;
+}
+.bc {
+   position: absolute;
+   top: 0px;
+}
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation: portrait) {
+   .ab-l {
+      display: none;
+   }
+   #about {
+      height: 65vh;
+   }
+   .arrow {
+      display: none;
+   }
+   .abv {
+      padding-top: 17vh;
+   }
+   .abouimg {
+      margin-top: 5vh;
+      width: 30%;
+   }
+   .ab h1 {
+      font-size: 2.7rem;
+   }
+   .ab p {
+      font-size: 1.3rem;
+   }
+   #about-2 .tog {
+      width: 40rem !important;
+      bottom: 0 !important;
+      top: 5rem !important;
+   }
+}
+#about-2 {
+   height: 100%;
+}
+#about-2 .tog {
+   position: relative;
+   width: 100%;
+   bottom: 0;
+   top: 8rem;
+   left: 0;
+}
+#about-2 .lab1 {
+   position: absolute;
+   width: 7%;
+   right: 3rem;
+   top: 3rem;
+   -webkit-transform: rotateZ(45deg);
+   transform: rotateZ(45deg);
+   -webkit-animation: bounce2 1.2s infinite ease;
+   animation: bounce2 1.2s infinite ease;
+   display: none;
 }

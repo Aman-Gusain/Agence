@@ -1,17 +1,22 @@
 .workpage {
    scroll-behavior: smooth;
    padding-top: 4rem;
-   background-color: #f5f5f5;
+   /* background-color: #f5f5f5; */
+   border-top: solid 1px black;
 }
 .services-area {
    height: 100%;
+   padding-top: 1rem;
 }
-
+.card {
+   text-decoration: none;
+   border: none;
+}
 .service-link {
    background: #f5f5f5;
-
-   padding-top: 2%;
-   padding-bottom: 2%;
+   border-top: solid 1px black;
+   padding-top: 1%;
+   padding-bottom: 1%;
    font-family: "IBM Plex Sans", sans-serif;
    border-bottom: solid 1px black;
 }
@@ -71,11 +76,15 @@
 }
 
 .services-tab-links ul li .abc.active {
-   color: gray;
-}
+   pointer-events: all !important;
 
+   color: gray !important;
+}
+.tab-content .active {
+   pointer-events: all !important;
+}
 .service-tab .container010 {
-   background-color: #f5f5f5;
+   /* background-color: #f5f5f5; */
    padding: 1%;
    padding-top: 0;
    position: relative;
@@ -90,7 +99,7 @@
    right: 0;
 }
 .container01 {
-   width: 90%;
+   width: 94%;
    margin: auto;
    text-align: center;
 }
@@ -115,7 +124,7 @@
    background-position: center;
    background-size: 100%;
    padding: 0;
-   opacity: 0.8;
+   opacity: 0.98;
 }
 .tab-slider .slick-prev:hover {
    position: absolute;
@@ -128,7 +137,7 @@
    background-position: center;
    background-size: 100%;
    padding: 0;
-   z-index: 999;
+   /* z-index: 999; */
    opacity: 1;
    filter: invert(18%) sepia(96%) saturate(2501%) hue-rotate(345deg)
       brightness(103%) contrast(77%);
@@ -147,12 +156,12 @@
    background-position: center;
    background-size: 100%;
    padding: 0;
-   z-index: 999;
-   opacity: 0.8;
+   /* z-index: 999; */
+   opacity: 0.98;
 }
 .tab-slider .slick-next {
    position: absolute;
-   right: 0;
+   /* right: 0; */
    height: 100%;
    font-size: 0;
    width: 3rem;
@@ -161,11 +170,11 @@
    background-position: center;
    background-size: 100%;
    padding: 0;
-   opacity: 0.8;
+   opacity: 0.98;
 }
 .tab-slider .slick-next:hover {
    position: absolute;
-   right: 0;
+   /* right: 0; */
    height: 100%;
    font-size: 0;
    width: 3rem;
@@ -174,7 +183,7 @@
    background-position: center;
    background-size: 100%;
    padding: 0;
-   z-index: 999;
+   /* z-index: 999; */
    opacity: 1;
    filter: invert(18%) sepia(96%) saturate(2501%) hue-rotate(345deg)
       brightness(103%) contrast(77%);
@@ -193,8 +202,8 @@
    background-position: center;
    background-size: 100%;
    padding: 0;
-   z-index: 999;
-   opacity: 0.8;
+   /* z-index: 999; */
+   opacity: 0.98;
 }
 .abc {
    position: relative;
@@ -226,10 +235,11 @@
    transform: scaleX(1);
    transform-origin: left;
 }
-.active {
+/* .active {
    transform: scaleX(1);
    transform-origin: left;
-}
+
+} */
 @media only screen and (max-width: 600px) {
    .abc {
       width: 40%;
@@ -262,16 +272,31 @@
       /* border-top: solid black 1px; */
    }
    .slick-prev {
-      left: 0px !important;
+      left: 10px !important;
    }
    .container01 {
       width: 92%;
       padding: 0;
       padding-top: 2%;
    }
+   .services-area {
+      padding-top: 2rem;
+   }
+   .slick-next {
+      right: 10px !important;
+   }
 }
 @media only screen and (max-width: 400px) {
    .service-link {
-      padding-top: 5%;
+      padding-top: 1%;
+   }
+   .slick-next {
+      position: absolute;
+      right: 0;
+   }
+}
+@media only screen and (max-width: 800px) {
+   .service-link {
+      padding-top: 0rem;
    }
 }

@@ -1,16 +1,20 @@
 import React, { useEffect } from "react";
-import Styles from "./Services.css";
-import $ from "jquery";
-
+import "./Services.css";
+import { Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Services = () => {
    useEffect(() => {
-      // $(".faet").click(function () {
-      //    $(".feat").removeClass("checked");
-      // });
+      AOS.init({
+         duration: 1400,
+      });
    });
    return (
       <div className="Services">
-         <h2 className="section-heading">Our Capabalities</h2>
+         <h2 className="section-heading">
+            <span className="left" data-aos="fade-left"></span> Our Capabalities{" "}
+            <span className="right" data-aos="fade-right"></span>
+         </h2>
          <div className="tabs">
             <input
                className="feat"
@@ -35,7 +39,7 @@ const Services = () => {
                      <i className="fas fa-fingerprint"></i>
 
                      <br />
-                     <span>Brand Identity</span>
+                     <span>Identity</span>
                   </label>
                </li>
                <li title="Design">
@@ -76,7 +80,18 @@ const Services = () => {
                         provide improved diagnostic quality to every patient
                         appointment.
                      </p>
-                     <button className="button">Read more</button>
+                     <Route
+                        render={({ history }) => (
+                           <button
+                              className="button"
+                              onClick={() => {
+                                 history.push("/about");
+                              }}
+                           >
+                              Read more
+                           </button>
+                        )}
+                     />
                   </div>
                </section>
                <section>
@@ -96,7 +111,18 @@ const Services = () => {
                         behaviours, desires and motivations that drive your
                         target audience.
                      </p>
-                     <button className="button">Read more</button>
+                     <Route
+                        render={({ history }) => (
+                           <button
+                              className="button"
+                              onClick={() => {
+                                 history.push("/about");
+                              }}
+                           >
+                              Read more
+                           </button>
+                        )}
+                     />
                   </div>
                </section>
                <section>
@@ -116,7 +142,18 @@ const Services = () => {
                         behaviours, desires and motivations that drive your
                         target audience.
                      </p>
-                     <button className="button">Read more</button>
+                     <Route
+                        render={({ history }) => (
+                           <button
+                              className="button"
+                              onClick={() => {
+                                 history.push("/about");
+                              }}
+                           >
+                              Read more
+                           </button>
+                        )}
+                     />
                   </div>
                </section>
                <section>
@@ -136,7 +173,18 @@ const Services = () => {
                         behaviours, desires and motivations that drive your
                         target audience.
                      </p>
-                     <button className="button">Read more</button>
+                     <Route
+                        render={({ history }) => (
+                           <button
+                              className="button"
+                              onClick={() => {
+                                 history.push("/about");
+                              }}
+                           >
+                              Read more
+                           </button>
+                        )}
+                     />
                   </div>
                </section>
             </div>

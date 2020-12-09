@@ -1,43 +1,45 @@
 import React, { useEffect } from "react";
-import { Route } from "react-router";
-import Styles from "./Work.css";
+import "./Work.css";
 import $ from "jquery";
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import Yellowdoor from "./Yellowdoor/Yellowdoor";
+import { Link } from "react-router-dom";
 
 const Work = () => {
    useEffect(() => {
-      $(".tab-slider").slick({
-         slidesToShow: 3,
-         slidesToScroll: 1,
-         infinite: false,
-         responsive: [
-            {
-               breakpoint: 991,
-               settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
+      $(".tab-slider")
+         .not(".slick-initialized")
+         .slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            responsive: [
+               {
+                  breakpoint: 991,
+                  settings: {
+                     slidesToShow: 3,
+                     slidesToScroll: 3,
+                  },
                },
-            },
-            {
-               breakpoint: 600,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+               {
+                  breakpoint: 600,
+                  settings: {
+                     slidesToShow: 2,
+                     slidesToScroll: 2,
+                  },
                },
-            },
-            {
-               breakpoint: 400,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
+               {
+                  breakpoint: 400,
+                  settings: {
+                     slidesToShow: 1,
+                     slidesToScroll: 1,
+                  },
                },
-            },
-         ],
-      });
+            ],
+         });
+      // $(".tab-slider").slick();
 
       $(".abc").click(function () {
          $(".abc").removeClass("active");
@@ -123,89 +125,105 @@ const Work = () => {
                <div className="container010">
                   <div className="tab-content">
                      <div className="tab-pane active show" id="1tab1">
-                        <div className="container-fluid mt-2">
-                           <div className="card-columns">
-                              <a
-                                 className="card card-reveal"
-                                 href="/work/yellowdoor"
-                              >
-                                 <img
-                                    className="card-img-top"
-                                    src="https://source.unsplash.com/jTGjg-NDLyM/600x400"
-                                 />
-                                 <div className="card-body">
-                                    <div className="card-title">
-                                       Look forward
-                                    </div>
+                        <div className="row">
+                           <div className="container-work">
+                              <div className="test_box box-01 col-xs-12 col-md-12">
+                                 <div className="inner">
+                                    <Link
+                                       to="/yellowdoor"
+                                       className="test_click"
+                                    >
+                                       <div className="flex_this">
+                                          <span className="test_title">
+                                             Yellow Door - Branding and
+                                             Designing
+                                          </span>
+                                       </div>
+                                    </Link>
                                  </div>
-                              </a>
-
-                              <a className="card card-reveal" href="#">
-                                 <img
-                                    className="card-img-top"
-                                    src="https://source.unsplash.com/fqgt7A43-K0/400x500"
-                                 />
-                                 <div className="card-body">
-                                    <div className="card-title">
-                                       Umbrella kiss
-                                    </div>
+                              </div>
+                              <div className="test_box box-02 col-xs-12 col-md-6">
+                                 <div className="inner">
+                                    <Link
+                                       to="/yellowdoor"
+                                       className="test_click"
+                                    >
+                                       <div className="flex_this">
+                                          <span className="test_title">
+                                             Yellow Door - Branding and
+                                             Designing
+                                          </span>
+                                       </div>
+                                    </Link>
                                  </div>
-                              </a>
-
-                              <a className="card card-reveal" href="#">
-                                 <img
-                                    className="card-img-top"
-                                    src="https://source.unsplash.com/WxFRIj4KGTk/400x600"
-                                 />
-                                 <div className="card-body">
-                                    <div className="card-title">The Tulip</div>
+                              </div>
+                              <div className="test_box box-03 col-xs-12 col-md-6">
+                                 <div className="inner">
+                                    <Link
+                                       to="/yellowdoor"
+                                       className="test_click"
+                                    >
+                                       <div className="flex_this">
+                                          <span className="test_title">
+                                             Yellow Door - Branding and
+                                             Designing
+                                          </span>
+                                       </div>
+                                    </Link>
                                  </div>
-                              </a>
-
-                              <a className="card card-reveal" href="#">
-                                 <img
-                                    className="card-img-top"
-                                    src="https://source.unsplash.com/DMS_Lz32y2A/400x200"
-                                 />
-                                 <div className="card-body">
-                                    <div className="card-title">
-                                       Tower of Terror
-                                    </div>
-                                 </div>
-                              </a>
+                              </div>
                            </div>
                         </div>
                      </div>
                      <div className="tab-pane fade" id="1tab2">
                         <div className="tab-content">
                            <div className="row">
-                              <div className="col-lg-6">
-                                 <div className="content">
-                                    <small>Features</small>
-                                    <h4>
-                                       A user-friendly Theme, build with
-                                       usability in mind, great modern design
-                                       and unique features
-                                    </h4>
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur
-                                       adipiscing elit, sed do eiusmod tempor
-                                       incididunt ut labore et dolore magna
-                                       aliqua. Ut enim ad minim veniam, quis
-                                       nostrud exercitation ullamco laboris nisi
-                                       ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <a href="" className="contact-btn">
-                                       Contact Now
-                                    </a>
+                              <div className="container-work">
+                                 <div className="test_box box-01 col-xs-12 col-md-12">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
                                  </div>
-                              </div>
-                              <div className="col-lg-6">
-                                 <img
-                                    src="https://raw.githubusercontent.com/srmahour/spunkweb/master/images/tab-img.jpg"
-                                    alt=""
-                                    className="img-fluid lazy"
-                                 />
+                                 <div className="test_box box-02 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
+                                 <div className="test_box box-03 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -213,29 +231,52 @@ const Work = () => {
                      <div className="tab-pane fade" id="1tab3">
                         <div className="tab-content">
                            <div className="row">
-                              <div className="col-lg-6">
-                                 <div className="content">
-                                    <small>Features</small>
-                                    <h4>A user-friendly The</h4>
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur
-                                       adipiscing elit, sed do eiusmod tempor
-                                       incididunt ut labore et dolore magna
-                                       aliqua. Ut enim ad minim veniam, quis
-                                       nostrud exercitation ullamco laboris nisi
-                                       ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <a href="" className="contact-btn">
-                                       Contact Now
-                                    </a>
+                              <div className="container-work">
+                                 <div className="test_box box-01 col-xs-12 col-md-12">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
                                  </div>
-                              </div>
-                              <div className="col-lg-6">
-                                 <img
-                                    src="https://raw.githubusercontent.com/srmahour/spunkweb/master/images/tab-img.jpg"
-                                    alt=""
-                                    className="img-fluid lazy"
-                                 />
+                                 <div className="test_box box-02 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
+                                 <div className="test_box box-03 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -243,33 +284,52 @@ const Work = () => {
                      <div className="tab-pane fade" id="1tab4">
                         <div className="tab-content">
                            <div className="row">
-                              <div className="col-lg-6">
-                                 <div className="content">
-                                    <small>Features</small>
-                                    <h4>
-                                       A user-friendly Theme, build with
-                                       usability in mind, great modern design
-                                       and unique features
-                                    </h4>
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur
-                                       adipiscing elit, sed do eiusmod tempor
-                                       incididunt ut labore et dolore magna
-                                       aliqua. Ut enim ad minim veniam, quis
-                                       nostrud exercitation ullamco laboris nisi
-                                       ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <a href="" className="contact-btn">
-                                       Contact Now
-                                    </a>
+                              <div className="container-work">
+                                 <div className="test_box box-01 col-xs-12 col-md-12">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
                                  </div>
-                              </div>
-                              <div className="col-lg-6">
-                                 <img
-                                    src="https://raw.githubusercontent.com/srmahour/spunkweb/master/images/tab-img.jpg"
-                                    alt=""
-                                    className="img-fluid lazy"
-                                 />
+                                 <div className="test_box box-02 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
+                                 <div className="test_box box-03 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -277,33 +337,52 @@ const Work = () => {
                      <div className="tab-pane fade" id="1tab5">
                         <div className="tab-content">
                            <div className="row">
-                              <div className="col-lg-6">
-                                 <div className="content">
-                                    <small>Features</small>
-                                    <h4>
-                                       A user-friendly Theme, build with
-                                       usability in mind, great modern design
-                                       and unique features
-                                    </h4>
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur
-                                       adipiscing elit, sed do eiusmod tempor
-                                       incididunt ut labore et dolore magna
-                                       aliqua. Ut enim ad minim veniam, quis
-                                       nostrud exercitation ullamco laboris nisi
-                                       ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <a href="" className="contact-btn">
-                                       Contact Now
-                                    </a>
+                              <div className="container-work">
+                                 <div className="test_box box-01 col-xs-12 col-md-12">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
                                  </div>
-                              </div>
-                              <div className="col-lg-6">
-                                 <img
-                                    src="https://raw.githubusercontent.com/srmahour/spunkweb/master/images/tab-img.jpg"
-                                    alt=""
-                                    className="img-fluid lazy"
-                                 />
+                                 <div className="test_box box-02 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
+                                 <div className="test_box box-03 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -311,33 +390,52 @@ const Work = () => {
                      <div className="tab-pane fade" id="1tab6">
                         <div className="tab-content">
                            <div className="row">
-                              <div className="col-lg-6">
-                                 <div className="content">
-                                    <small>Features</small>
-                                    <h4>
-                                       A user-friendly Theme, build with
-                                       usability in mind, great modern design
-                                       and unique features
-                                    </h4>
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur
-                                       adipiscing elit, sed do eiusmod tempor
-                                       incididunt ut labore et dolore magna
-                                       aliqua. Ut enim ad minim veniam, quis
-                                       nostrud exercitation ullamco laboris nisi
-                                       ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <a href="" className="contact-btn">
-                                       Contact Now
-                                    </a>
+                              <div className="container-work">
+                                 <div className="test_box box-01 col-xs-12 col-md-12">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
                                  </div>
-                              </div>
-                              <div className="col-lg-6">
-                                 <img
-                                    src="https://raw.githubusercontent.com/srmahour/spunkweb/master/images/tab-img.jpg"
-                                    alt=""
-                                    className="img-fluid lazy"
-                                 />
+                                 <div className="test_box box-02 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
+                                 <div className="test_box box-03 col-xs-12 col-md-6">
+                                    <div className="inner">
+                                       <Link
+                                          to="/yellowdoor"
+                                          className="test_click"
+                                       >
+                                          <div className="flex_this">
+                                             <span className="test_title">
+                                                Yellow Door - Branding and
+                                                Designing
+                                             </span>
+                                          </div>
+                                       </Link>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>

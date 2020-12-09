@@ -8,7 +8,7 @@
    pointer-events: none;
    transition: all 150ms ease;
    transition-property: background-color, opacity, transform, mix-blend-mode;
-   z-index: 9999;
+   z-index: 999900;
    mix-blend-mode: difference;
 }
 
@@ -19,4 +19,19 @@
 .cursor--clicked {
    transform: translate(-50%, -50%) scale(0.9);
    background-color: #fefefe;
+}
+@media only screen and (max-width: 600px) {
+   .cursor {
+      display: none;
+   }
+}
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation: portrait) {
+   .cursor {
+      display: none;
+   }
+}
+@media (pointer: coarse) {
+   .cursor {
+      display: none;
+   }
 }

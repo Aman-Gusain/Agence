@@ -1,26 +1,26 @@
-import React, { useEffect } from "react";
-import Styles from "./Footer.css";
-import $ from "jquery";
+import React, { useEffect } from 'react'
+import './Footer.css'
+import $ from 'jquery'
 
 const Footer = () => {
    useEffect(() => {
-      $(".n").blur(function () {
+      $('.n').blur(function () {
          if ($(this).val()) {
-            $(".nl").css("display", "none");
+            $('.nl').css('display', 'none')
          } else {
-            $(".nl").css("display", "block");
+            $('.nl').css('display', 'block')
          }
-      });
-      $(".e").blur(function () {
+      })
+      $('.e').blur(function () {
          if ($(this).val()) {
-            $(".el").css("display", "none");
+            $('.el').css('display', 'none')
          } else {
-            $(".el").css("display", "block");
+            $('.el').css('display', 'block')
          }
-      });
-   });
+      })
+   })
    return (
-      <main>
+      <main className="foot">
          <footer>
             <div className="container0">
                <h2 className="footerhead">Subscribe to our newsletter</h2>
@@ -31,18 +31,22 @@ const Footer = () => {
                   // name="EmailForm"
                >
                   <div className="group">
-                     <input className="input n" type="text" />
+                     <input id="inn" className="input n" type="text" />
                      <span className="highlight"></span>
 
                      <span className="bar"></span>
-                     <label className="label nl">Name</label>
+                     <label htmlFor="inn" className="label nl">
+                        Name
+                     </label>
                   </div>
                   <div className="group">
-                     <input className="input e" type="email" />
+                     <input id="ine" className="input e" type="email" />
                      <span className="highlight"></span>
 
                      <span className="bar"></span>
-                     <label className="label el">Email</label>
+                     <label htmlFor="ine" className="label el">
+                        Email
+                     </label>
                   </div>
                </form>
                <button className="button x">Submit</button>
@@ -90,7 +94,10 @@ const Footer = () => {
                      <i className="fab fa-instagram fa-2x"></i>
                   </a>
                   <a href="#">
-                     <i className="fab fa-youtube fa-2x"></i>
+                     <i className="fab fa-behance fa-2x"></i>
+                  </a>
+                  <a href="#">
+                     <i className="fab fa-dribbble fa-2x"></i>
                   </a>
                   <a href="#">
                      <i className="fab fa-linkedin-in fa-2x"></i>
@@ -99,7 +106,7 @@ const Footer = () => {
             </div>
          </footer>
       </main>
-   );
-};
+   )
+}
 
-export default Footer;
+export default Footer

@@ -1,114 +1,147 @@
 import React, { useEffect } from "react";
-import log from "./agence-logo-black.png";
-import Styles from "./Navbar.css";
+
+import "./Navbar.css";
 import $ from "jquery";
 import Work from "../Work/Work";
 import Yellowdoor from "../Work/Yellowdoor/Yellowdoor";
 import Scrolltotop from "../Scrolltotop";
 import Landingpage from "../Landingpage/Landingpage";
 import About from "../About/About";
+import Error from "../ErrorPage/Error";
 import Contact from "../Contact/Contact";
 import { Route } from "react-router";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Switch, Link, Redirect } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Navbar = () => {
    useEffect(() => {
-      // TOGGLE HAMBURGER & COLLAPSE NAV
-      $(".nav-toggle").on("click", function () {
-         $(this).toggleClass("open");
-         $(".menu-left").toggleClass("collapse");
+      const overlay = document.getElementById("overlay");
+
+      const closeM = document.getElementById("close");
+
+      const openM = document.getElementById("open");
+
+      const Link = document.getElementById("lin");
+
+      openM.addEventListener("click", function () {
+         $(window).scrollTop(0);
+         setTimeout(() => {
+            overlay.classList.add("show");
+         }, 50);
       });
-      // REMOVE X & COLLAPSE NAV ON ON CLICK
-      $(".menu-left a").on("click", function () {
-         $(".nav-toggle").removeClass("open");
-         $(".menu-left").removeClass("collapse");
+      Link.addEventListener("click", function () {
+         overlay.classList.remove("show");
       });
-      $(".logo").on("click", function () {
-         $(".nav-toggle").removeClass("open");
-         $(".menu-left").removeClass("collapse");
+      window.addEventListener("scroll", function () {
+         overlay.classList.remove("show");
       });
-      // SHOW/HIDE NAV
-
-      // Hide Header on on scroll down
-      var didScroll;
-      var lastScrollTop = 0;
-      var delta = 5;
-      var navbarHeight = $("header").outerHeight();
-
-      $(window).scroll(function (event) {
-         didScroll = true;
+      closeM.addEventListener("click", function () {
+         overlay.classList.remove("show");
       });
-
-      setInterval(function () {
-         if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-         }
-      }, 250);
-
-      function hasScrolled() {
-         var st = $(window).scrollTop();
-
-         // Make sure they scroll more than delta
-         if (Math.abs(lastScrollTop - st) <= delta) return;
-
-         // If they scrolled down and are past the navbar, add className .nav-up.
-         // This is necessary so you never see what is "behind" the navbar.
-         if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $("header").removeClass("show-nav").addClass("hide-nav");
-            $(".nav-toggle").removeClass("open");
-            $(".menu-left").removeClass("collapse");
-         } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-               $("header").removeClass("hide-nav").addClass("show-nav");
-            }
-         }
-
-         lastScrollTop = st;
-      }
    });
 
    return (
-      <div>
-         <header>
-            <div className="container">
-               <nav id="navigation">
-                  <Link to="/Agence" className="logo">
-                     <img className="log" src={log} alt="" />
-                  </Link>
-                  <h2 className="Name">Agence</h2>
-                  <a aria-label="mobile menu" className="nav-toggle">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                  </a>
-                  <ul className="menu-left">
-                     <li>
-                        <NavLink to="/about">About</NavLink>
-                     </li>
-                     <li>
-                        <NavLink to="/work">Work</NavLink>
-                     </li>
-                     <li>
-                        <NavLink to="/contact">Contact</NavLink>
-                     </li>
-                  </ul>
-               </nav>
-            </div>
-         </header>
-         <Scrolltotop>
-            {/* <Route path="/Agence" exact component={LandingPage} />
-            <Route path="/" exact component={LandingPage} />
-            <Route path="/home" exact component={LandingPage} /> */}
-            <Route path="/" exact component={Landingpage} />
-            <Route path="/Agence" exact component={Landingpage} />
-            <Route path="/work" exact component={Work} />
-            <Route path="/about" exact component={About} />
-            <Route path="/contact" exact component={Contact} />
-            <Route path="/work/yellowdoor" exact component={Yellowdoor} />
-         </Scrolltotop>
+      <div className="nav-bar">
+         <Link to="/home">
+            <img
+               className="log"
+               src={require("./agence-logo-black.png")}
+               alt=""
+            />
+         </Link>
+         <nav id="overlay" className="over-lay">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+
+            <svg
+               className="cross"
+               id="close"
+               width="33"
+               height="33"
+               viewBox="0 0 18 17"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M1 2L17 15M1 15L17 2"
+                  stroke="#f5f5f5f5"
+                  strokeWidth="3"
+               />
+            </svg>
+
+            <ul id="lin">
+               <li>
+                  <NavLink to="/home/">Home</NavLink>
+                  {/* <span>Let's get start here</span> */}
+               </li>
+               <li>
+                  <NavLink to="/about">About</NavLink>
+                  {/* <span>Find out what you need</span> */}
+               </li>
+               <li>
+                  <NavLink to="/work">Work</NavLink>
+                  {/* <span>See what i've done</span> */}
+               </li>
+               <li>
+                  <NavLink to="/contact">Contact</NavLink>
+                  {/* <span>Let me introduce myself</span> */}
+               </li>
+            </ul>
+         </nav>
+
+         <div className="container000">
+            <svg
+               className="menu"
+               id="open"
+               width="33"
+               height="33"
+               viewBox="0 0 19 16"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M0 2H18.5M0 8H18.5M0 14.5H18.5"
+                  stroke="#000000"
+                  strokeWidth="3"
+               />
+            </svg>
+         </div>
+         <Route
+            render={({ location }) => (
+               <Scrolltotop>
+                  <TransitionGroup>
+                     <CSSTransition
+                        key={location.key}
+                        timeout={600}
+                        classNames="page"
+                     >
+                        <Switch location={location}>
+                           <Route exact path="/">
+                              <Redirect to="/home" />
+                           </Route>
+                           <Route
+                              path="/Agence"
+                              exact
+                              component={Landingpage}
+                           />
+
+                           <Route path="/home" exact component={Landingpage} />
+                           <Route path="/about" exact component={About} />
+                           <Route path="/contact" exact component={Contact} />
+                           <Route
+                              path="/yellowdoor"
+                              exact
+                              component={Yellowdoor}
+                           />
+                           <Route path="/work" exact component={Work} />
+                           <Route component={Error} />
+                        </Switch>
+                     </CSSTransition>
+                  </TransitionGroup>
+               </Scrolltotop>
+            )}
+         />
       </div>
    );
 };
