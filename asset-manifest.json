@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/Agence/static/css/main.10568288.chunk.css",
-    "main.js": "/Agence/static/js/main.a03e2b07.chunk.js",
-    "main.js.map": "/Agence/static/js/main.a03e2b07.chunk.js.map",
+    "main.css": "/Agence/static/css/main.a83f4295.chunk.css",
+    "main.js": "/Agence/static/js/main.dd698a06.chunk.js",
+    "main.js.map": "/Agence/static/js/main.dd698a06.chunk.js.map",
     "runtime-main.js": "/Agence/static/js/runtime-main.4ed8951e.js",
     "runtime-main.js.map": "/Agence/static/js/runtime-main.4ed8951e.js.map",
     "static/css/2.5a99b70f.chunk.css": "/Agence/static/css/2.5a99b70f.chunk.css",
     "static/js/2.f0a2972d.chunk.js": "/Agence/static/js/2.f0a2972d.chunk.js",
     "static/js/2.f0a2972d.chunk.js.map": "/Agence/static/js/2.f0a2972d.chunk.js.map",
     "index.html": "/Agence/index.html",
-    "precache-manifest.8c172c4aeb5a82b2d41a86d5dc7586be.js": "/Agence/precache-manifest.8c172c4aeb5a82b2d41a86d5dc7586be.js",
+    "precache-manifest.94b623e9bce7bb12f20e177919d32c0a.js": "/Agence/precache-manifest.94b623e9bce7bb12f20e177919d32c0a.js",
     "service-worker.js": "/Agence/service-worker.js",
     "static/css/2.5a99b70f.chunk.css.map": "/Agence/static/css/2.5a99b70f.chunk.css.map",
-    "static/css/main.10568288.chunk.css.map": "/Agence/static/css/main.10568288.chunk.css.map",
+    "static/css/main.a83f4295.chunk.css.map": "/Agence/static/css/main.a83f4295.chunk.css.map",
     "static/js/2.f0a2972d.chunk.js.LICENSE.txt": "/Agence/static/js/2.f0a2972d.chunk.js.LICENSE.txt",
     "static/media/Agence Character phone (1).png": "/Agence/static/media/Agence Character phone (1).7cbafbfc.png",
     "static/media/lab illustration final.png": "/Agence/static/media/lab illustration final.9502e131.png",
     "static/media/laptop male (1) (1).png": "/Agence/static/media/laptop male (1) (1).9f3a8aba.png",
     "static/media/scentra.jpg": "/Agence/static/media/scentra.e326a71d.jpg",
     "static/media/slick-theme.css": "/Agence/static/media/slick.f97e3bbf.svg",
-    "static/media/space illustration1 (1) (1).png": "/Agence/static/media/space illustration1 (1) (1).4e30c267.png"
+    "static/media/space illustration1 (2).png": "/Agence/static/media/space illustration1 (2).85684cbf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4ed8951e.js",
     "static/css/2.5a99b70f.chunk.css",
     "static/js/2.f0a2972d.chunk.js",
-    "static/css/main.10568288.chunk.css",
-    "static/js/main.a03e2b07.chunk.js"
+    "static/css/main.a83f4295.chunk.css",
+    "static/js/main.dd698a06.chunk.js"
   ]
 }
