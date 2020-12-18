@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/Agence/static/css/main.b1ad2ce6.chunk.css",
-    "main.js": "/Agence/static/js/main.670f0544.chunk.js",
-    "main.js.map": "/Agence/static/js/main.670f0544.chunk.js.map",
+    "main.css": "/Agence/static/css/main.8e0465a5.chunk.css",
+    "main.js": "/Agence/static/js/main.54499a87.chunk.js",
+    "main.js.map": "/Agence/static/js/main.54499a87.chunk.js.map",
     "runtime-main.js": "/Agence/static/js/runtime-main.4ed8951e.js",
     "runtime-main.js.map": "/Agence/static/js/runtime-main.4ed8951e.js.map",
     "static/css/2.5a99b70f.chunk.css": "/Agence/static/css/2.5a99b70f.chunk.css",
-    "static/js/2.f0a2972d.chunk.js": "/Agence/static/js/2.f0a2972d.chunk.js",
-    "static/js/2.f0a2972d.chunk.js.map": "/Agence/static/js/2.f0a2972d.chunk.js.map",
+    "static/js/2.ce0af795.chunk.js": "/Agence/static/js/2.ce0af795.chunk.js",
+    "static/js/2.ce0af795.chunk.js.map": "/Agence/static/js/2.ce0af795.chunk.js.map",
     "index.html": "/Agence/index.html",
-    "precache-manifest.03e1b64e336eb05f192c5885fbac66e5.js": "/Agence/precache-manifest.03e1b64e336eb05f192c5885fbac66e5.js",
+    "precache-manifest.b90f787354ae4a6cfaedd8831fd8d129.js": "/Agence/precache-manifest.b90f787354ae4a6cfaedd8831fd8d129.js",
     "service-worker.js": "/Agence/service-worker.js",
     "static/css/2.5a99b70f.chunk.css.map": "/Agence/static/css/2.5a99b70f.chunk.css.map",
-    "static/css/main.b1ad2ce6.chunk.css.map": "/Agence/static/css/main.b1ad2ce6.chunk.css.map",
-    "static/js/2.f0a2972d.chunk.js.LICENSE.txt": "/Agence/static/js/2.f0a2972d.chunk.js.LICENSE.txt",
+    "static/css/main.8e0465a5.chunk.css.map": "/Agence/static/css/main.8e0465a5.chunk.css.map",
+    "static/js/2.ce0af795.chunk.js.LICENSE.txt": "/Agence/static/js/2.ce0af795.chunk.js.LICENSE.txt",
     "static/media/Agence Character phone (1).png": "/Agence/static/media/Agence Character phone (1).7cbafbfc.png",
+    "static/media/characters-min.png": "/Agence/static/media/characters-min.54fd546a.png",
     "static/media/lab illustration final.png": "/Agence/static/media/lab illustration final.9502e131.png",
     "static/media/laptop male (1) (1).png": "/Agence/static/media/laptop male (1) (1).9f3a8aba.png",
+    "static/media/plants-min.png": "/Agence/static/media/plants-min.7ad1e8c2.png",
     "static/media/scentra.jpg": "/Agence/static/media/scentra.e326a71d.jpg",
-    "static/media/slick-theme.css": "/Agence/static/media/slick.f97e3bbf.svg",
-    "static/media/website-min.png": "/Agence/static/media/website-min.5e23cde4.png"
+    "static/media/slick-theme.css": "/Agence/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4ed8951e.js",
     "static/css/2.5a99b70f.chunk.css",
-    "static/js/2.f0a2972d.chunk.js",
-    "static/css/main.b1ad2ce6.chunk.css",
-    "static/js/main.670f0544.chunk.js"
+    "static/js/2.ce0af795.chunk.js",
+    "static/css/main.8e0465a5.chunk.css",
+    "static/js/main.54499a87.chunk.js"
   ]
 }

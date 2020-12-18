@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf7dbad3aa90761cdd48d19ab46c1478",
+    "revision": "b380a5be3a0003e6693c56c0f99b557b",
     "url": "/Agence/index.html"
   },
   {
-    "revision": "c67528911967549829d4",
+    "revision": "9f644d6d6dded7cfbbcd",
     "url": "/Agence/static/css/2.5a99b70f.chunk.css"
   },
   {
-    "revision": "9ae13f42d5be51312de6",
-    "url": "/Agence/static/css/main.b1ad2ce6.chunk.css"
+    "revision": "46dd1e4740f75224eba8",
+    "url": "/Agence/static/css/main.8e0465a5.chunk.css"
   },
   {
-    "revision": "c67528911967549829d4",
-    "url": "/Agence/static/js/2.f0a2972d.chunk.js"
+    "revision": "9f644d6d6dded7cfbbcd",
+    "url": "/Agence/static/js/2.ce0af795.chunk.js"
   },
   {
     "revision": "6e1e45388e4bd26ee491a838c0eb1e4a",
-    "url": "/Agence/static/js/2.f0a2972d.chunk.js.LICENSE.txt"
+    "url": "/Agence/static/js/2.ce0af795.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ae13f42d5be51312de6",
-    "url": "/Agence/static/js/main.670f0544.chunk.js"
+    "revision": "46dd1e4740f75224eba8",
+    "url": "/Agence/static/js/main.54499a87.chunk.js"
   },
   {
     "revision": "929571137253e99a22f9",
@@ -32,12 +32,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Agence/static/media/Agence Character phone (1).7cbafbfc.png"
   },
   {
+    "revision": "54fd546a0350394ca8388f0dec3907c8",
+    "url": "/Agence/static/media/characters-min.54fd546a.png"
+  },
+  {
     "revision": "9502e131364f97d5ca968eca35e46dfd",
     "url": "/Agence/static/media/lab illustration final.9502e131.png"
   },
   {
     "revision": "9f3a8abab03b02d0c8632f4996bfe377",
     "url": "/Agence/static/media/laptop male (1) (1).9f3a8aba.png"
+  },
+  {
+    "revision": "7ad1e8c2b69056f04c7cdb64fa9bd98a",
+    "url": "/Agence/static/media/plants-min.7ad1e8c2.png"
   },
   {
     "revision": "e326a71d364009611dfc81ad1c23ed83",
@@ -58,9 +66,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/Agence/static/media/slick.f97e3bbf.svg"
-  },
-  {
-    "revision": "5e23cde48771f4b60946976a684464d3",
-    "url": "/Agence/static/media/website-min.5e23cde4.png"
   }
 ]);
