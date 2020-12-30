@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Agence/static/css/main.c62314da.chunk.css",
-    "main.js": "/Agence/static/js/main.0666252e.chunk.js",
-    "main.js.map": "/Agence/static/js/main.0666252e.chunk.js.map",
+    "main.css": "/Agence/static/css/main.8557c62a.chunk.css",
+    "main.js": "/Agence/static/js/main.60220f14.chunk.js",
+    "main.js.map": "/Agence/static/js/main.60220f14.chunk.js.map",
     "runtime-main.js": "/Agence/static/js/runtime-main.4ed8951e.js",
     "runtime-main.js.map": "/Agence/static/js/runtime-main.4ed8951e.js.map",
     "static/css/2.5a99b70f.chunk.css": "/Agence/static/css/2.5a99b70f.chunk.css",
-    "static/js/2.2241cd8e.chunk.js": "/Agence/static/js/2.2241cd8e.chunk.js",
-    "static/js/2.2241cd8e.chunk.js.map": "/Agence/static/js/2.2241cd8e.chunk.js.map",
+    "static/js/2.6e79538e.chunk.js": "/Agence/static/js/2.6e79538e.chunk.js",
+    "static/js/2.6e79538e.chunk.js.map": "/Agence/static/js/2.6e79538e.chunk.js.map",
     "index.html": "/Agence/index.html",
-    "precache-manifest.ae3568f7f1bead26a0861dfc00671c64.js": "/Agence/precache-manifest.ae3568f7f1bead26a0861dfc00671c64.js",
+    "precache-manifest.cb7f80d5389822b3f6405c1f8378e66d.js": "/Agence/precache-manifest.cb7f80d5389822b3f6405c1f8378e66d.js",
     "service-worker.js": "/Agence/service-worker.js",
     "static/css/2.5a99b70f.chunk.css.map": "/Agence/static/css/2.5a99b70f.chunk.css.map",
-    "static/css/main.c62314da.chunk.css.map": "/Agence/static/css/main.c62314da.chunk.css.map",
-    "static/js/2.2241cd8e.chunk.js.LICENSE.txt": "/Agence/static/js/2.2241cd8e.chunk.js.LICENSE.txt",
+    "static/css/main.8557c62a.chunk.css.map": "/Agence/static/css/main.8557c62a.chunk.css.map",
+    "static/js/2.6e79538e.chunk.js.LICENSE.txt": "/Agence/static/js/2.6e79538e.chunk.js.LICENSE.txt",
     "static/media/Agence Character phone (1).png": "/Agence/static/media/Agence Character phone (1).7cbafbfc.png",
     "static/media/lab illustration final.png": "/Agence/static/media/lab illustration final.c6f1e972.png",
     "static/media/laptop male (1) (1).png": "/Agence/static/media/laptop male (1) (1).9f3a8aba.png",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.4ed8951e.js",
     "static/css/2.5a99b70f.chunk.css",
-    "static/js/2.2241cd8e.chunk.js",
-    "static/css/main.c62314da.chunk.css",
-    "static/js/main.0666252e.chunk.js"
+    "static/js/2.6e79538e.chunk.js",
+    "static/css/main.8557c62a.chunk.css",
+    "static/js/main.60220f14.chunk.js"
   ]
 }
